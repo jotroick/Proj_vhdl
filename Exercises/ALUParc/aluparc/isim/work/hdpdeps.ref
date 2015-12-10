@@ -1,0 +1,42 @@
+V3 34
+FL $XILINX/verilog/src/glbl.v 2005/11/16.05:34:44 I.24
+MO work/glbl            FL $XILINX/verilog/src/glbl.v
+FL D:/Documentos/XILINXPROYECTOS/aluparc/leftsim.vhw 2007/04/15.20:15:50 I.24
+EN work/leftsim 1176686211         FL D:/Documentos/XILINXPROYECTOS/aluparc/leftsim.vhw \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537 PB ieee/STD_LOGIC_TEXTIO 1132105539 \
+      PB std/textio 1132105521
+AR work/leftsim/testbench_arch 1176686212 \
+      FL D:/Documentos/XILINXPROYECTOS/aluparc/leftsim.vhw EN work/leftsim 1176686211 \
+      CP leftshifter    PB ieee/STD_LOGIC_TEXTIO 1132105539
+FL D:/Documentos/XILINXPROYECTOS/aluparc/netgen/par/leftshifter_timesim.v 2007/04/15.20:16:37 I.24
+MO work/leftshifter \
+      FL D:/Documentos/XILINXPROYECTOS/aluparc/netgen/par/leftshifter_timesim.v \
+      MI X_BUF          MI X_BUFGMUX      MI X_FF           MI X_INV          MI X_IPAD \
+      MI X_OBUF         MI X_ONE          MI X_OPAD         MI X_ZERO
+FL D:/Documentos/XILINXPROYECTOS/aluparc/alusim.vhw 2007/04/15.20:29:23 I.24
+EN work/alusim 1176687039          FL D:/Documentos/XILINXPROYECTOS/aluparc/alusim.vhw \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537 PB ieee/STD_LOGIC_TEXTIO 1132105539 \
+      PB std/textio 1132105521
+AR work/alusim/testbench_arch 1176687040 FL D:/Documentos/XILINXPROYECTOS/aluparc/alusim.vhw \
+      EN work/alusim 1176687039 CP ALU     PB ieee/STD_LOGIC_TEXTIO 1132105539
+FL D:/Documentos/XILINXPROYECTOS/aluparc/netgen/par/ALU_timesim.v 2007/04/15.20:30:21 I.24
+MO work/ALU             FL D:/Documentos/XILINXPROYECTOS/aluparc/netgen/par/ALU_timesim.v \
+      MI X_BUF          MI X_BUFGMUX      MI X_FF           MI X_INV          MI X_IPAD \
+      MI X_LATCHE       MI X_LUT4         MI X_OBUF         MI X_ONE          MI X_OPAD \
+      MI X_ZERO
+FL D:/Documentos/XILINXPROYECTOS/aluparc/netgen/par/rightshifter_timesim.v 2007/04/15.18:36:53 I.24
+MO work/rightshifter \
+      FL D:/Documentos/XILINXPROYECTOS/aluparc/netgen/par/rightshifter_timesim.v \
+      MI X_AND2         MI X_BUF          MI X_BUFGMUX      MI X_FF           MI X_INV \
+      MI X_IPAD         MI X_LUT4         MI X_MUX2         MI X_OBUF         MI X_ONE \
+      MI X_OPAD         MI X_XOR2         MI X_ZERO
+FL D:/Documentos/XILINXPROYECTOS/aluparc/rshifsim.vhw 2007/04/15.18:36:00 I.24
+EN work/rshifsim 1176681114        FL D:/Documentos/XILINXPROYECTOS/aluparc/rshifsim.vhw \
+      PB ieee/std_logic_1164 1132105529 PB ieee/std_logic_arith 1132105531 \
+      PB ieee/STD_LOGIC_UNSIGNED 1132105537 PB ieee/STD_LOGIC_TEXTIO 1132105539 \
+      PB std/textio 1132105521
+AR work/rshifsim/testbench_arch 1176681115 \
+      FL D:/Documentos/XILINXPROYECTOS/aluparc/rshifsim.vhw EN work/rshifsim 1176681114 \
+      CP rightshifter   PB ieee/STD_LOGIC_TEXTIO 1132105539

@@ -1,0 +1,5 @@
+[Inputs]
+clk
+[Outputs]
+=sal[1:0]=
+[BiDir]

@@ -1,0 +1,10 @@
+V3 8
+FL C:/projectxilinx/cronome/cgh.vhd 2007/12/13.02:02:10 J.36
+FL C:/projectxilinx/cronome/crono.vhd 2007/12/13.01:02:42 J.36
+EN work/crono 1198287824 FL C:/projectxilinx/cronome/crono.vhd \
+      PB ieee/std_logic_1164 1177545575 PB ieee/std_logic_arith 1177545576 \
+      PB ieee/STD_LOGIC_UNSIGNED 1177545583 PH ieee/NUMERIC_STD 1177545583 \
+      LB unisim PH unisim/VCOMPONENTS 1177545586
+AR work/crono/rtl 1198287825 \
+      FL C:/projectxilinx/cronome/crono.vhd EN work/crono 1198287824 CP Prueba_DCM \
+      CP prescaler CP regs_FSM

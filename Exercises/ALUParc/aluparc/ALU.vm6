@@ -1,0 +1,2290 @@
+NDS Database:  version I.24
+
+NDS_INFO | acr2 | A2C64A44VQ | XA2C64A-7-VQ44
+
+DEVICE | A2C64A | A2C64A44VQ | 
+
+NETWORK | ALU | 0 | 0 | 1073758214
+
+INPUT_INSTANCE | 0 | 0 | NULL | CLK_II | ALU_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | CLK | 6622 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+
+INPUT_INSTANCE | 0 | 0 | NULL | datob<0>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | datob<0> | 6623 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | datob<1>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | datob<1> | 6624 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | datob<2>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | datob<2> | 6625 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | datob<3>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | datob<3> | 6626 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | res<0>_MC | ALU_COPY_0_COPY_0 | 268436544 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshif<0> | 6639 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<0>_MC.Q | cableshif<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshifr<0> | 6650 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<0>_MC.Q | cableshifr<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 6658 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | res<0>_MC.Q | 6665 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | res<0>_MC.Q | res<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | res<0>_MC.SI | res<0>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshif<0> | 6639 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<0>_MC.Q | cableshif<0>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshifr<0> | 6650 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<0>_MC.Q | cableshifr<0>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | res<0>_MC.D1 | 6629 | ? | 0 | 0 | res<0>_MC | NULL | NULL | res<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | res<0>_MC.D2 | 6628 | ? | 0 | 0 | res<0>_MC | NULL | NULL | res<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM
+SPPTERM | 4 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM
+SPPTERM | 4 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | cableshif<0>
+SPPTERM | 4 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | cableshifr<0>
+
+SRFF_INSTANCE | res<0>_MC.REG | res<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | res<0>_MC.D | 6627 | ? | 0 | 0 | res<0>_MC | NULL | NULL | res<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 6658 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | res<0>_MC.Q | 6664 | ? | 0 | 0 | res<0>_MC | NULL | NULL | res<0>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | datoa<0>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | datoa<0> | 6631 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | datoa<0>_II/IREG | 6828 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 10 | 5 | II_REG
+
+INPUT_INSTANCE | 0 | 0 | NULL | selecs<1>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | selecs<1> | 6633 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | selecs<2>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | selecs<2> | 6635 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | selecs<0>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | selecs<0> | 6637 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | PrldLow | cableshif<0>_MC | ALU_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/IREG | 6827 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cableshif<0> | 6639 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<0>_MC.Q | cableshif<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cableshif<0>_MC.SI | cableshif<0>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | cableshif<0>_MC.CE | 6641 | ? | 0 | 0 | cableshif<0>_MC | NULL | NULL | cableshif<0>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+
+SRFF_INSTANCE | cableshif<0>_MC.REG | cableshif<0>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | datoa<3>_II/IREG | 6827 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | cableshif<0>_MC.CE | 6641 | ? | 0 | 0 | cableshif<0>_MC | NULL | NULL | cableshif<0>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cableshif<0>_MC.Q | 6640 | ? | 0 | 0 | cableshif<0>_MC | NULL | NULL | cableshif<0>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_90_MC | ALU_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_90_MC.SI | N_PZ_90_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_90_MC.D1 | 6646 | ? | 0 | 0 | N_PZ_90_MC | NULL | NULL | N_PZ_90_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_90_MC.D2 | 6645 | ? | 0 | 0 | N_PZ_90_MC | NULL | NULL | N_PZ_90_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datob<2>_II/UIM
+SPPTERM | 2 | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datob<1>_II/UIM
+
+SRFF_INSTANCE | N_PZ_90_MC.REG | N_PZ_90_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_90_MC.D | 6644 | ? | 0 | 0 | N_PZ_90_MC | NULL | NULL | N_PZ_90_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_90_MC.Q | 6643 | ? | 0 | 0 | N_PZ_90_MC | NULL | NULL | N_PZ_90_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | cableshifr<0>_MC | ALU_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cableshifr<0> | 6650 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<0>_MC.Q | cableshifr<0>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cableshifr<0>_MC.SI | cableshifr<0>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cableshifr<0>_MC.D1 | 6654 | ? | 0 | 0 | cableshifr<0>_MC | NULL | NULL | cableshifr<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cableshifr<0>_MC.D2 | 6653 | ? | 0 | 0 | cableshifr<0>_MC | NULL | NULL | cableshifr<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | datoa<1>_II/UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | cableshifr<0>_MC.CE | 6657 | ? | 0 | 0 | cableshifr<0>_MC | NULL | NULL | cableshifr<0>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+
+SRFF_INSTANCE | cableshifr<0>_MC.REG | cableshifr<0>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cableshifr<0>_MC.D | 6652 | ? | 0 | 0 | cableshifr<0>_MC | NULL | NULL | cableshifr<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | cableshifr<0>_MC.CE | 6657 | ? | 0 | 0 | cableshifr<0>_MC | NULL | NULL | cableshifr<0>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cableshifr<0>_MC.Q | 6651 | ? | 0 | 0 | cableshifr<0>_MC | NULL | NULL | cableshifr<0>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | datoa<1>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | datoa<1> | 6655 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | datoa<1>_II/IREG | 6829 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 10 | 5 | II_REG
+
+MACROCELL_INSTANCE | NULL | N_PZ_68_MC | ALU_COPY_0_COPY_0 | 0 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_68_MC.SI | N_PZ_68_MC | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_68_MC.D1 | 6663 | ? | 0 | 0 | N_PZ_68_MC | NULL | NULL | N_PZ_68_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_68_MC.D2 | 6662 | ? | 0 | 0 | N_PZ_68_MC | NULL | NULL | N_PZ_68_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM
+SPPTERM | 2 | IV_TRUE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM
+
+SRFF_INSTANCE | N_PZ_68_MC.REG | N_PZ_68_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_68_MC.D | 6661 | ? | 0 | 0 | N_PZ_68_MC | NULL | NULL | N_PZ_68_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_68_MC.Q | 6660 | ? | 0 | 0 | N_PZ_68_MC | NULL | NULL | N_PZ_68_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | res<0> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | res<0>_MC.Q | 6665 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | res<0>_MC.Q | res<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | res<0> | 6666 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | res<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | res<1>_MC | ALU_COPY_0_COPY_0 | 268436544 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshif<1> | 6670 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<1>_MC.Q | cableshif<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshifr<1> | 6673 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<1>_MC.Q | cableshifr<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 6658 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | res<1>_MC.Q | 6692 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | res<1>_MC.Q | res<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | res<1>_MC.SI | res<1>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshif<1> | 6670 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<1>_MC.Q | cableshif<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshifr<1> | 6673 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<1>_MC.Q | cableshifr<1>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | res<1>_MC.D1 | 6669 | ? | 0 | 0 | res<1>_MC | NULL | NULL | res<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | res<1>_MC.D2 | 6668 | ? | 0 | 0 | res<1>_MC | NULL | NULL | res<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_FALSE | datob<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | N_PZ_76
+SPPTERM | 4 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | cableshif<1>
+SPPTERM | 4 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | cableshifr<1>
+SPPTERM | 5 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | N_PZ_76
+SPPTERM | 5 | IV_FALSE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_76
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_76 | IV_TRUE | N_PZ_78
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_76 | IV_FALSE | N_PZ_78
+
+SRFF_INSTANCE | res<1>_MC.REG | res<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | res<1>_MC.D | 6667 | ? | 0 | 0 | res<1>_MC | NULL | NULL | res<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 6658 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | res<1>_MC.Q | 6691 | ? | 0 | 0 | res<1>_MC | NULL | NULL | res<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | cableshif<1>_MC | ALU_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/IREG | 6828 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cableshif<1> | 6670 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<1>_MC.Q | cableshif<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cableshif<1>_MC.SI | cableshif<1>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | cableshif<1>_MC.CE | 6672 | ? | 0 | 0 | cableshif<1>_MC | NULL | NULL | cableshif<1>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+
+SRFF_INSTANCE | cableshif<1>_MC.REG | cableshif<1>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | datoa<0>_II/IREG | 6828 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | cableshif<1>_MC.CE | 6672 | ? | 0 | 0 | cableshif<1>_MC | NULL | NULL | cableshif<1>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cableshif<1>_MC.Q | 6671 | ? | 0 | 0 | cableshif<1>_MC | NULL | NULL | cableshif<1>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | cableshifr<1>_MC | ALU_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cableshifr<1> | 6673 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<1>_MC.Q | cableshifr<1>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cableshifr<1>_MC.SI | cableshifr<1>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cableshifr<1>_MC.D1 | 6677 | ? | 0 | 0 | cableshifr<1>_MC | NULL | NULL | cableshifr<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cableshifr<1>_MC.D2 | 6676 | ? | 0 | 0 | cableshifr<1>_MC | NULL | NULL | cableshifr<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | datoa<2>_II/UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | cableshifr<1>_MC.CE | 6680 | ? | 0 | 0 | cableshifr<1>_MC | NULL | NULL | cableshifr<1>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+
+SRFF_INSTANCE | cableshifr<1>_MC.REG | cableshifr<1>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cableshifr<1>_MC.D | 6675 | ? | 0 | 0 | cableshifr<1>_MC | NULL | NULL | cableshifr<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | cableshifr<1>_MC.CE | 6680 | ? | 0 | 0 | cableshifr<1>_MC | NULL | NULL | cableshifr<1>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cableshifr<1>_MC.Q | 6674 | ? | 0 | 0 | cableshifr<1>_MC | NULL | NULL | cableshifr<1>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | datoa<2>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | datoa<2> | 6678 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | datoa<2>_II/IREG | 6830 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 10 | 5 | II_REG
+
+MACROCELL_INSTANCE | NULL | N_PZ_76_MC | ALU_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_76_MC.SI | N_PZ_76_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_76_MC.D1 | 6685 | ? | 0 | 0 | N_PZ_76_MC | NULL | NULL | N_PZ_76_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_76_MC.D2 | 6684 | ? | 0 | 0 | N_PZ_76_MC | NULL | NULL | N_PZ_76_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | datob<1>_II/UIM | IV_FALSE | datoa<1>_II/UIM
+SPPTERM | 2 | IV_FALSE | datob<1>_II/UIM | IV_TRUE | datoa<1>_II/UIM
+
+SRFF_INSTANCE | N_PZ_76_MC.REG | N_PZ_76_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_76_MC.D | 6683 | ? | 0 | 0 | N_PZ_76_MC | NULL | NULL | N_PZ_76_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_76_MC.Q | 6682 | ? | 0 | 0 | N_PZ_76_MC | NULL | NULL | N_PZ_76_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_78_MC | ALU_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_78_MC.SI | N_PZ_78_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_78_MC.D1 | 6690 | ? | 0 | 0 | N_PZ_78_MC | NULL | NULL | N_PZ_78_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_78_MC.D2 | 6689 | ? | 0 | 0 | N_PZ_78_MC | NULL | NULL | N_PZ_78_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | N_PZ_76
+SPPTERM | 3 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_FALSE | N_PZ_76
+
+SRFF_INSTANCE | N_PZ_78_MC.REG | N_PZ_78_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_78_MC.D | 6688 | ? | 0 | 0 | N_PZ_78_MC | NULL | NULL | N_PZ_78_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_78_MC.Q | 6687 | ? | 0 | 0 | N_PZ_78_MC | NULL | NULL | N_PZ_78_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | res<1> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | res<1>_MC.Q | 6692 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | res<1>_MC.Q | res<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | res<1> | 6693 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | res<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+Inv+PrldLow+Ce | res<2>_MC | ALU_COPY_0_COPY_0 | 268436800 | 9 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C6/Mmux__n0009_I1_Result2 | 6697 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C6/Mmux__n0009_I1_Result2_MC.Q | C6/Mmux__n0009_I1_Result2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_161 | 6717 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_161_MC.Q | N_PZ_161_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshifr<2> | 6725 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<2>_MC.Q | cableshifr<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshif<2> | 6722 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<2>_MC.Q | cableshif<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 6658 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | res<2>_MC.Q | 6734 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | res<2>_MC.Q | res<2>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | res<2>_MC.SI | res<2>_MC | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C6/Mmux__n0009_I1_Result2 | 6697 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C6/Mmux__n0009_I1_Result2_MC.Q | C6/Mmux__n0009_I1_Result2_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_161 | 6717 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_161_MC.Q | N_PZ_161_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshifr<2> | 6725 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<2>_MC.Q | cableshifr<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshif<2> | 6722 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<2>_MC.Q | cableshif<2>_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | res<2>_MC.D1 | 6695 | ? | 0 | 0 | res<2>_MC | NULL | NULL | res<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | C6/Mmux__n0009_I1_Result2 | IV_FALSE | N_PZ_161
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | res<2>_MC.D2 | 6696 | ? | 0 | 0 | res<2>_MC | NULL | NULL | res<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | C6/Mmux__n0009_I1_Result2 | IV_FALSE | N_PZ_161 | IV_TRUE | cableshifr<2>
+SPPTERM | 6 | IV_TRUE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | C6/Mmux__n0009_I1_Result2 | IV_FALSE | N_PZ_161 | IV_TRUE | cableshifr<2>
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | C6/Mmux__n0009_I1_Result2 | IV_FALSE | N_PZ_161 | IV_TRUE | cableshif<2>
+
+SRFF_INSTANCE | res<2>_MC.REG | res<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | res<2>_MC.D | 6694 | ? | 0 | 0 | res<2>_MC | NULL | NULL | res<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 6658 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | res<2>_MC.Q | 6733 | ? | 0 | 0 | res<2>_MC | NULL | NULL | res<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | C6/Mmux__n0009_I1_Result2_MC | ALU_COPY_0_COPY_0 | 0 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_109 | 6712 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_109_MC.Q | N_PZ_109_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | C6/Mmux__n0009_I1_Result2 | 6697 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C6/Mmux__n0009_I1_Result2_MC.Q | C6/Mmux__n0009_I1_Result2_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | C6/Mmux__n0009_I1_Result2_MC.SI | C6/Mmux__n0009_I1_Result2_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_109 | 6712 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_109_MC.Q | N_PZ_109_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | C6/Mmux__n0009_I1_Result2_MC.D1 | 6701 | ? | 0 | 0 | C6/Mmux__n0009_I1_Result2_MC | NULL | NULL | C6/Mmux__n0009_I1_Result2_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | C6/Mmux__n0009_I1_Result2_MC.D2 | 6700 | ? | 0 | 0 | C6/Mmux__n0009_I1_Result2_MC | NULL | NULL | C6/Mmux__n0009_I1_Result2_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_FALSE | datob<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_50 | IV_TRUE | N_PZ_109
+SPPTERM | 6 | IV_FALSE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_50 | IV_TRUE | N_PZ_109
+SPPTERM | 6 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51
+SPPTERM | 6 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | N_PZ_50
+SPPTERM | 7 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76
+SPPTERM | 7 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_FALSE | N_PZ_51
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76
+
+SRFF_INSTANCE | C6/Mmux__n0009_I1_Result2_MC.REG | C6/Mmux__n0009_I1_Result2_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | C6/Mmux__n0009_I1_Result2_MC.D | 6699 | ? | 0 | 0 | C6/Mmux__n0009_I1_Result2_MC | NULL | NULL | C6/Mmux__n0009_I1_Result2_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | C6/Mmux__n0009_I1_Result2_MC.Q | 6698 | ? | 0 | 0 | C6/Mmux__n0009_I1_Result2_MC | NULL | NULL | C6/Mmux__n0009_I1_Result2_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_50_MC | ALU_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_50_MC.SI | N_PZ_50_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_50_MC.D1 | 6705 | ? | 0 | 0 | N_PZ_50_MC | NULL | NULL | N_PZ_50_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | datob<1>_II/UIM | IV_TRUE | datoa<1>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_50_MC.D2 | 6706 | ? | 0 | 0 | N_PZ_50_MC | NULL | NULL | N_PZ_50_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | N_PZ_50_MC.REG | N_PZ_50_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_50_MC.D | 6704 | ? | 0 | 0 | N_PZ_50_MC | NULL | NULL | N_PZ_50_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_50_MC.Q | 6703 | ? | 0 | 0 | N_PZ_50_MC | NULL | NULL | N_PZ_50_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_51_MC | ALU_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_51_MC.SI | N_PZ_51_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_51_MC.D1 | 6710 | ? | 0 | 0 | N_PZ_51_MC | NULL | NULL | N_PZ_51_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | datob<1>_II/UIM | IV_TRUE | datoa<2>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_51_MC.D2 | 6711 | ? | 0 | 0 | N_PZ_51_MC | NULL | NULL | N_PZ_51_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | N_PZ_51_MC.REG | N_PZ_51_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_51_MC.D | 6709 | ? | 0 | 0 | N_PZ_51_MC | NULL | NULL | N_PZ_51_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_51_MC.Q | 6708 | ? | 0 | 0 | N_PZ_51_MC | NULL | NULL | N_PZ_51_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_109_MC | ALU_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_109 | 6712 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_109_MC.Q | N_PZ_109_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_109_MC.SI | N_PZ_109_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_109_MC.D1 | 6716 | ? | 0 | 0 | N_PZ_109_MC | NULL | NULL | N_PZ_109_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_109_MC.D2 | 6715 | ? | 0 | 0 | N_PZ_109_MC | NULL | NULL | N_PZ_109_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | datob<2>_II/UIM | IV_FALSE | datoa<2>_II/UIM
+SPPTERM | 2 | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM
+
+SRFF_INSTANCE | N_PZ_109_MC.REG | N_PZ_109_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_109_MC.D | 6714 | ? | 0 | 0 | N_PZ_109_MC | NULL | NULL | N_PZ_109_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_109_MC.Q | 6713 | ? | 0 | 0 | N_PZ_109_MC | NULL | NULL | N_PZ_109_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_161_MC | ALU_COPY_0_COPY_0 | 0 | 5 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_109 | 6712 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_109_MC.Q | N_PZ_109_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_161 | 6717 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_161_MC.Q | N_PZ_161_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_161_MC.SI | N_PZ_161_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_109 | 6712 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_109_MC.Q | N_PZ_109_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_161_MC.D1 | 6721 | ? | 0 | 0 | N_PZ_161_MC | NULL | NULL | N_PZ_161_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_161_MC.D2 | 6720 | ? | 0 | 0 | N_PZ_161_MC | NULL | NULL | N_PZ_161_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | N_PZ_78 | IV_FALSE | N_PZ_109
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_78 | IV_TRUE | N_PZ_109
+
+SRFF_INSTANCE | N_PZ_161_MC.REG | N_PZ_161_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_161_MC.D | 6719 | ? | 0 | 0 | N_PZ_161_MC | NULL | NULL | N_PZ_161_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_161_MC.Q | 6718 | ? | 0 | 0 | N_PZ_161_MC | NULL | NULL | N_PZ_161_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | cableshif<2>_MC | ALU_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/IREG | 6829 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cableshif<2> | 6722 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<2>_MC.Q | cableshif<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cableshif<2>_MC.SI | cableshif<2>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | cableshif<2>_MC.CE | 6724 | ? | 0 | 0 | cableshif<2>_MC | NULL | NULL | cableshif<2>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+
+SRFF_INSTANCE | cableshif<2>_MC.REG | cableshif<2>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | datoa<1>_II/IREG | 6829 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | cableshif<2>_MC.CE | 6724 | ? | 0 | 0 | cableshif<2>_MC | NULL | NULL | cableshif<2>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cableshif<2>_MC.Q | 6723 | ? | 0 | 0 | cableshif<2>_MC | NULL | NULL | cableshif<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | cableshifr<2>_MC | ALU_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cableshifr<2> | 6725 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<2>_MC.Q | cableshifr<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cableshifr<2>_MC.SI | cableshifr<2>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cableshifr<2>_MC.D1 | 6729 | ? | 0 | 0 | cableshifr<2>_MC | NULL | NULL | cableshifr<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cableshifr<2>_MC.D2 | 6728 | ? | 0 | 0 | cableshifr<2>_MC | NULL | NULL | cableshifr<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | datoa<3>_II/UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | cableshifr<2>_MC.CE | 6732 | ? | 0 | 0 | cableshifr<2>_MC | NULL | NULL | cableshifr<2>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+
+SRFF_INSTANCE | cableshifr<2>_MC.REG | cableshifr<2>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cableshifr<2>_MC.D | 6727 | ? | 0 | 0 | cableshifr<2>_MC | NULL | NULL | cableshifr<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | cableshifr<2>_MC.CE | 6732 | ? | 0 | 0 | cableshifr<2>_MC | NULL | NULL | cableshifr<2>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cableshifr<2>_MC.Q | 6726 | ? | 0 | 0 | cableshifr<2>_MC | NULL | NULL | cableshifr<2>_MC.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | datoa<3>_II | ALU_COPY_0_COPY_0 | 16 | 1 | 2
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | datoa<3> | 6730 | PI | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 10 | 5 | II_REG
+NODE | datoa<3>_II/IREG | 6827 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 10 | 5 | II_REG
+
+OUTPUT_INSTANCE | 0 | res<2> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | res<2>_MC.Q | 6734 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | res<2>_MC.Q | res<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | res<2> | 6735 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | res<2> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | res<3>_MC | ALU_COPY_0_COPY_0 | 268436544 | 11 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshif<3> | 6740 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<3>_MC.Q | cableshif<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshifr<3> | 6743 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<3>_MC.Q | cableshifr<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C1/cable<2> | 6749 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C1/cable<2>_MC.Q | C1/cable<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_134 | 6754 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_134_MC.Q | N_PZ_134_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 6658 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | res<3>_MC.Q | 6760 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | res<3>_MC.Q | res<3>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | res<3>_MC.SI | res<3>_MC | 0 | 10 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshif<3> | 6740 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<3>_MC.Q | cableshif<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | cableshifr<3> | 6743 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<3>_MC.Q | cableshifr<3>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C1/cable<2> | 6749 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C1/cable<2>_MC.Q | C1/cable<2>_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_134 | 6754 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_134_MC.Q | N_PZ_134_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | res<3>_MC.D1 | 6737 | ? | 0 | 0 | res<3>_MC | NULL | NULL | res<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | datob<3>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | res<3>_MC.D2 | 6738 | ? | 0 | 0 | res<3>_MC | NULL | NULL | res<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 4 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | cableshif<3>
+SPPTERM | 4 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | N_PZ_68 | IV_TRUE | datob<3>_II/UIM
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | cableshifr<3>
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<3>_II/UIM | IV_TRUE | cableshifr<3>
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datoa<3>_II/UIM | IV_FALSE | C1/cable<2>
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<3>_II/UIM | IV_TRUE | C1/cable<2>
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<3>_II/UIM | IV_TRUE | N_PZ_134
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<3>_II/UIM | IV_FALSE | N_PZ_134
+
+SRFF_INSTANCE | res<3>_MC.REG | res<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | res<3>_MC.D | 6736 | ? | 0 | 0 | res<3>_MC | NULL | NULL | res<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 6658 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | res<3>_MC.Q | 6759 | ? | 0 | 0 | res<3>_MC | NULL | NULL | res<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | cableshif<3>_MC | ALU_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/IREG | 6830 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 10 | 5 | II_REG
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cableshif<3> | 6740 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshif<3>_MC.Q | cableshif<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cableshif<3>_MC.SI | cableshif<3>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | cableshif<3>_MC.CE | 6742 | ? | 0 | 0 | cableshif<3>_MC | NULL | NULL | cableshif<3>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+
+SRFF_INSTANCE | cableshif<3>_MC.REG | cableshif<3>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | datoa<2>_II/IREG | 6830 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 10 | 5 | II_REG
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | cableshif<3>_MC.CE | 6742 | ? | 0 | 0 | cableshif<3>_MC | NULL | NULL | cableshif<3>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cableshif<3>_MC.Q | 6741 | ? | 0 | 0 | cableshif<3>_MC | NULL | NULL | cableshif<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow | cableshifr<3>_MC | ALU_COPY_0_COPY_0 | 1024 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | cableshifr<3> | 6743 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | cableshifr<3>_MC.Q | cableshifr<3>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | cableshifr<3>_MC.SI | cableshifr<3>_MC | 0 | 2 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | cableshifr<3>_MC.D1 | 6747 | ? | 0 | 0 | cableshifr<3>_MC | NULL | NULL | cableshifr<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | cableshifr<3>_MC.D2 | 6746 | ? | 0 | 0 | cableshifr<3>_MC | NULL | NULL | cableshifr<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | datoa<0>_II/UIM
+OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | cableshifr<3>_MC.CE | 6748 | ? | 0 | 0 | cableshifr<3>_MC | NULL | NULL | cableshifr<3>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+
+SRFF_INSTANCE | cableshifr<3>_MC.REG | cableshifr<3>_MC | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | cableshifr<3>_MC.D | 6745 | ? | 0 | 0 | cableshifr<3>_MC | NULL | NULL | cableshifr<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | CLK_II/FCLK | 6649 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | CLK_II | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
+SIGNAL | NODE | cableshifr<3>_MC.CE | 6748 | ? | 0 | 0 | cableshifr<3>_MC | NULL | NULL | cableshifr<3>_MC.SI | 10 | 9 | MC_SI_CE
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | cableshifr<3>_MC.Q | 6744 | ? | 0 | 0 | cableshifr<3>_MC | NULL | NULL | cableshifr<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | C1/cable<2>_MC | ALU_COPY_0_COPY_0 | 0 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | C1/cable<2> | 6749 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C1/cable<2>_MC.Q | C1/cable<2>_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | C1/cable<2>_MC.SI | C1/cable<2>_MC | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | C1/cable<2>_MC.D1 | 6753 | ? | 0 | 0 | C1/cable<2>_MC | NULL | NULL | C1/cable<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | C1/cable<2>_MC.D2 | 6752 | ? | 0 | 0 | C1/cable<2>_MC | NULL | NULL | C1/cable<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_50
+SPPTERM | 2 | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM
+SPPTERM | 2 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51
+SPPTERM | 4 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_76
+SPPTERM | 4 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76
+
+SRFF_INSTANCE | C1/cable<2>_MC.REG | C1/cable<2>_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | C1/cable<2>_MC.D | 6751 | ? | 0 | 0 | C1/cable<2>_MC | NULL | NULL | C1/cable<2>_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | C1/cable<2>_MC.Q | 6750 | ? | 0 | 0 | C1/cable<2>_MC | NULL | NULL | C1/cable<2>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_134_MC | ALU_COPY_0_COPY_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_109 | 6712 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_109_MC.Q | N_PZ_109_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_134 | 6754 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_134_MC.Q | N_PZ_134_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_134_MC.SI | N_PZ_134_MC | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_109 | 6712 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_109_MC.Q | N_PZ_109_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_134_MC.D1 | 6758 | ? | 0 | 0 | N_PZ_134_MC | NULL | NULL | N_PZ_134_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_134_MC.D2 | 6757 | ? | 0 | 0 | N_PZ_134_MC | NULL | NULL | N_PZ_134_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM
+SPPTERM | 2 | IV_FALSE | N_PZ_78 | IV_FALSE | N_PZ_109
+
+SRFF_INSTANCE | N_PZ_134_MC.REG | N_PZ_134_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_134_MC.D | 6756 | ? | 0 | 0 | N_PZ_134_MC | NULL | NULL | N_PZ_134_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_134_MC.Q | 6755 | ? | 0 | 0 | N_PZ_134_MC | NULL | NULL | N_PZ_134_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | res<3> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | res<3>_MC.Q | 6760 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | res<3>_MC.Q | res<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | res<3> | 6761 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | res<3> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | resm<0>_MC | ALU_COPY_0_COPY_0 | 268436544 | 6 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | resm<0>_MC.Q | 6767 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<0>_MC.Q | resm<0>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | resm<0>_MC.SI | resm<0>_MC | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | resm<0>_MC.D1 | 6763 | ? | 0 | 0 | resm<0>_MC | NULL | NULL | resm<0>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 5 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | resm<0>_MC.D2 | 6764 | ? | 0 | 0 | resm<0>_MC | NULL | NULL | resm<0>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | resm<0>_MC.REG | resm<0>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | resm<0>_MC.D | 6762 | ? | 0 | 0 | resm<0>_MC | NULL | NULL | resm<0>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | resm<0>_MC.Q | 6766 | ? | 0 | 0 | resm<0>_MC | NULL | NULL | resm<0>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | resm<0> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | resm<0>_MC.Q | 6767 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<0>_MC.Q | resm<0>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | resm<0> | 6768 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | resm<0> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | resm<1>_MC | ALU_COPY_0_COPY_0 | 268436544 | 8 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | resm<1>_MC.Q | 6773 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<1>_MC.Q | resm<1>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | resm<1>_MC.SI | resm<1>_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | resm<1>_MC.D1 | 6771 | ? | 0 | 0 | resm<1>_MC | NULL | NULL | resm<1>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | resm<1>_MC.D2 | 6770 | ? | 0 | 0 | resm<1>_MC | NULL | NULL | resm<1>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datoa<1>_II/UIM
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<1>_II/UIM | IV_TRUE | datoa<1>_II/UIM
+SPPTERM | 6 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<1>_II/UIM
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<1>_II/UIM | IV_FALSE | datoa<1>_II/UIM
+
+SRFF_INSTANCE | resm<1>_MC.REG | resm<1>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | resm<1>_MC.D | 6769 | ? | 0 | 0 | resm<1>_MC | NULL | NULL | resm<1>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | resm<1>_MC.Q | 6772 | ? | 0 | 0 | resm<1>_MC | NULL | NULL | resm<1>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | resm<1> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | resm<1>_MC.Q | 6773 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<1>_MC.Q | resm<1>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | resm<1> | 6774 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | resm<1> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | resm<2>_MC | ALU_COPY_0_COPY_0 | 268436544 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_109 | 6712 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_109_MC.Q | N_PZ_109_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | resm<2>_MC.Q | 6779 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<2>_MC.Q | resm<2>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | resm<2>_MC.SI | resm<2>_MC | 0 | 9 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_109 | 6712 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_109_MC.Q | N_PZ_109_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | resm<2>_MC.D1 | 6777 | ? | 0 | 0 | resm<2>_MC | NULL | NULL | resm<2>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | resm<2>_MC.D2 | 6776 | ? | 0 | 0 | resm<2>_MC | NULL | NULL | resm<2>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_109
+SPPTERM | 6 | IV_FALSE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_50
+SPPTERM | 6 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | N_PZ_50
+SPPTERM | 6 | IV_FALSE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | N_PZ_50
+SPPTERM | 7 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_50
+SPPTERM | 7 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_FALSE | N_PZ_50
+
+SRFF_INSTANCE | resm<2>_MC.REG | resm<2>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | resm<2>_MC.D | 6775 | ? | 0 | 0 | resm<2>_MC | NULL | NULL | resm<2>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | resm<2>_MC.Q | 6778 | ? | 0 | 0 | resm<2>_MC | NULL | NULL | resm<2>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | resm<2> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | resm<2>_MC.Q | 6779 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<2>_MC.Q | resm<2>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | resm<2> | 6780 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | resm<2> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | resm<3>_MC | ALU_COPY_0_COPY_0 | 268436544 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/Mxor_p<3>__n0001 | 6784 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/Mxor_p<3>__n0001_MC.Q | C3/Mxor_p<3>__n0001_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | resm<3>_MC.Q | 6795 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<3>_MC.Q | resm<3>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | resm<3>_MC.SI | resm<3>_MC | 0 | 12 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/Mxor_p<3>__n0001 | 6784 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/Mxor_p<3>__n0001_MC.Q | C3/Mxor_p<3>__n0001_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | resm<3>_MC.D1 | 6783 | ? | 0 | 0 | resm<3>_MC | NULL | NULL | resm<3>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | resm<3>_MC.D2 | 6782 | ? | 0 | 0 | resm<3>_MC | NULL | NULL | resm<3>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 7 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | N_PZ_51 | IV_FALSE | C3/Mxor_p<3>__n0001
+SPPTERM | 7 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | N_PZ_51 | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | datoa<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | datoa<3>_II/UIM | IV_TRUE | C3/Mxor_p<3>__n0001
+SPPTERM | 8 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_FALSE | C3/Mxor_p<3>__n0001
+SPPTERM | 8 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_50 | IV_TRUE | C3/Mxor_p<3>__n0001
+
+SRFF_INSTANCE | resm<3>_MC.REG | resm<3>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | resm<3>_MC.D | 6781 | ? | 0 | 0 | resm<3>_MC | NULL | NULL | resm<3>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | resm<3>_MC.Q | 6794 | ? | 0 | 0 | resm<3>_MC | NULL | NULL | resm<3>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | C3/Mxor_p<3>__n0001_MC | ALU_COPY_0_COPY_0 | 0 | 7 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | C3/Mxor_p<3>__n0001 | 6784 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/Mxor_p<3>__n0001_MC.Q | C3/Mxor_p<3>__n0001_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | C3/Mxor_p<3>__n0001_MC.SI | C3/Mxor_p<3>__n0001_MC | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | C3/Mxor_p<3>__n0001_MC.D1 | 6787 | ? | 0 | 0 | C3/Mxor_p<3>__n0001_MC | NULL | NULL | C3/Mxor_p<3>__n0001_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | datob<3>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | C3/Mxor_p<3>__n0001_MC.D2 | 6788 | ? | 0 | 0 | C3/Mxor_p<3>__n0001_MC | NULL | NULL | C3/Mxor_p<3>__n0001_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_50
+SPPTERM | 4 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<2>_II/UIM
+SPPTERM | 5 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | N_PZ_50 | IV_TRUE | datob<3>_II/UIM
+SPPTERM | 5 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_FALSE | N_PZ_78 | IV_TRUE | N_PZ_50 | IV_FALSE | datob<3>_II/UIM
+
+SRFF_INSTANCE | C3/Mxor_p<3>__n0001_MC.REG | C3/Mxor_p<3>__n0001_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | C3/Mxor_p<3>__n0001_MC.D | 6786 | ? | 0 | 0 | C3/Mxor_p<3>__n0001_MC | NULL | NULL | C3/Mxor_p<3>__n0001_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | C3/Mxor_p<3>__n0001_MC.Q | 6785 | ? | 0 | 0 | C3/Mxor_p<3>__n0001_MC | NULL | NULL | C3/Mxor_p<3>__n0001_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | N_PZ_48_MC | ALU_COPY_0_COPY_0 | 0 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | N_PZ_48_MC.SI | N_PZ_48_MC | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | N_PZ_48_MC.D1 | 6792 | ? | 0 | 0 | N_PZ_48_MC | NULL | NULL | N_PZ_48_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 2 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<3>_II/UIM
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | N_PZ_48_MC.D2 | 6793 | ? | 0 | 0 | N_PZ_48_MC | NULL | NULL | N_PZ_48_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | N_PZ_48_MC.REG | N_PZ_48_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | N_PZ_48_MC.D | 6791 | ? | 0 | 0 | N_PZ_48_MC | NULL | NULL | N_PZ_48_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | N_PZ_48_MC.Q | 6790 | ? | 0 | 0 | N_PZ_48_MC | NULL | NULL | N_PZ_48_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | resm<3> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | resm<3>_MC.Q | 6795 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<3>_MC.Q | resm<3>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | resm<3> | 6796 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | resm<3> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | resm<4>_MC | ALU_COPY_0_COPY_0 | 268436544 | 18 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/_n0009 | 6800 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/_n0009_MC.Q | C3/_n0009_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/Mxor_p<3>__n0001 | 6784 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/Mxor_p<3>__n0001_MC.Q | C3/Mxor_p<3>__n0001_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 6805 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | resm<4>_MC.Q | 6807 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<4>_MC.Q | resm<4>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | resm<4>_MC.SI | resm<4>_MC | 0 | 17 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/_n0009 | 6800 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/_n0009_MC.Q | C3/_n0009_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/Mxor_p<3>__n0001 | 6784 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/Mxor_p<3>__n0001_MC.Q | C3/Mxor_p<3>__n0001_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | resm<4>_MC.D1 | 6799 | ? | 0 | 0 | resm<4>_MC | NULL | NULL | resm<4>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | resm<4>_MC.D2 | 6798 | ? | 0 | 0 | resm<4>_MC | NULL | NULL | resm<4>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 7 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+SPPTERM | 7 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_FALSE | N_PZ_51 | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_76 | IV_TRUE | N_PZ_51 | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_78 | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76 | IV_FALSE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_78 | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 10 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 10 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+
+SRFF_INSTANCE | resm<4>_MC.REG | resm<4>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | resm<4>_MC.D | 6797 | ? | 0 | 0 | resm<4>_MC | NULL | NULL | resm<4>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 6805 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | resm<4>_MC.Q | 6806 | ? | 0 | 0 | resm<4>_MC | NULL | NULL | resm<4>_MC.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | NULL | C3/_n0009_MC | ALU_COPY_0_COPY_0 | 0 | 13 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/Mxor_p<3>__n0001 | 6784 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/Mxor_p<3>__n0001_MC.Q | C3/Mxor_p<3>__n0001_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | C3/_n0009 | 6800 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/_n0009_MC.Q | C3/_n0009_MC | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | C3/_n0009_MC.SI | C3/_n0009_MC | 0 | 13 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<0>_II/UIM | 6632 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/Mxor_p<3>__n0001 | 6784 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/Mxor_p<3>__n0001_MC.Q | C3/Mxor_p<3>__n0001_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_78 | 6686 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_78_MC.Q | N_PZ_78_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | C3/_n0009_MC.D1 | 6804 | ? | 0 | 0 | C3/_n0009_MC | NULL | NULL | C3/_n0009_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | C3/_n0009_MC.D2 | 6803 | ? | 0 | 0 | C3/_n0009_MC | NULL | NULL | C3/_n0009_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 5 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001
+SPPTERM | 5 | IV_FALSE | datob<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001
+SPPTERM | 5 | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_76 | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+SPPTERM | 6 | IV_TRUE | N_PZ_90 | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+SPPTERM | 6 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76 | IV_FALSE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48
+SPPTERM | 7 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | N_PZ_78 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+
+SRFF_INSTANCE | C3/_n0009_MC.REG | C3/_n0009_MC | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | C3/_n0009_MC.D | 6802 | ? | 0 | 0 | C3/_n0009_MC | NULL | NULL | C3/_n0009_MC.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | C3/_n0009_MC.Q | 6801 | ? | 0 | 0 | C3/_n0009_MC | NULL | NULL | C3/_n0009_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | resm<4> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | resm<4>_MC.Q | 6807 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<4>_MC.Q | resm<4>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | resm<4> | 6808 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | resm<4> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | resm<5>_MC | ALU_COPY_0_COPY_0 | 268436544 | 16 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/_n0009 | 6800 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/_n0009_MC.Q | C3/_n0009_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | resm<5>_MC.Q | 6813 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<5>_MC.Q | resm<5>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | resm<5>_MC.SI | resm<5>_MC | 0 | 15 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/_n0009 | 6800 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/_n0009_MC.Q | C3/_n0009_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | resm<5>_MC.D1 | 6811 | ? | 0 | 0 | resm<5>_MC | NULL | NULL | resm<5>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | resm<5>_MC.D2 | 6810 | ? | 0 | 0 | resm<5>_MC | NULL | NULL | resm<5>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 6 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | C3/_n0009
+SPPTERM | 6 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+SPPTERM | 6 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | C3/_n0009
+SPPTERM | 6 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_FALSE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+SPPTERM | 7 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | C3/_n0009
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_76 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_50 | IV_FALSE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_TRUE | C3/_n0009
+SPPTERM | 8 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_TRUE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_50 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_TRUE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+
+SRFF_INSTANCE | resm<5>_MC.REG | resm<5>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | resm<5>_MC.D | 6809 | ? | 0 | 0 | resm<5>_MC | NULL | NULL | resm<5>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | resm<5>_MC.Q | 6812 | ? | 0 | 0 | resm<5>_MC | NULL | NULL | resm<5>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | resm<5> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | resm<5>_MC.Q | 6813 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<5>_MC.Q | resm<5>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | resm<5> | 6814 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | resm<5> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | resm<6>_MC | ALU_COPY_0_COPY_0 | 268436544 | 15 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/_n0009 | 6800 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/_n0009_MC.Q | C3/_n0009_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 6805 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | resm<6>_MC.Q | 6819 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<6>_MC.Q | resm<6>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | resm<6>_MC.SI | resm<6>_MC | 0 | 14 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_90 | 6642 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_90_MC.Q | N_PZ_90_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/_n0009 | 6800 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/_n0009_MC.Q | C3/_n0009_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_50 | 6702 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_50_MC.Q | N_PZ_50_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_51 | 6707 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_51_MC.Q | N_PZ_51_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_76 | 6681 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_76_MC.Q | N_PZ_76_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_48 | 6789 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_48_MC.Q | N_PZ_48_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | resm<6>_MC.D1 | 6817 | ? | 0 | 0 | resm<6>_MC | NULL | NULL | resm<6>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | resm<6>_MC.D2 | 6816 | ? | 0 | 0 | resm<6>_MC | NULL | NULL | resm<6>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_50 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76 | IV_TRUE | N_PZ_48 | IV_TRUE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_76 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_FALSE | N_PZ_48 | IV_TRUE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_TRUE | C3/_n0009
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_TRUE | C3/_n0009
+
+SRFF_INSTANCE | resm<6>_MC.REG | resm<6>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | resm<6>_MC.D | 6815 | ? | 0 | 0 | resm<6>_MC | NULL | NULL | resm<6>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 6805 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | resm<6>_MC.Q | 6818 | ? | 0 | 0 | resm<6>_MC | NULL | NULL | resm<6>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | resm<6> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | resm<6>_MC.Q | 6819 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<6>_MC.Q | resm<6>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | resm<6> | 6820 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | resm<6> | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | Latch+PrldLow+Ce | resm<7>_MC | ALU_COPY_0_COPY_0 | 268436544 | 12 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/_n0009 | 6800 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/_n0009_MC.Q | C3/_n0009_MC | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | resm<7>_MC.Q | 6825 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<7>_MC.Q | resm<7>_MC | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | resm<7>_MC.SI | resm<7>_MC | 0 | 11 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<0>_II/UIM | 6630 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<1>_II/UIM | 6634 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<2>_II/UIM | 6636 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | selecs<0>_II/UIM | 6638 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | selecs<0>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<2>_II/UIM | 6647 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<1>_II/UIM | 6648 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<1>_II/UIM | 6656 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<1>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<2>_II/UIM | 6679 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<2>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datoa<3>_II/UIM | 6731 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datoa<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | datob<3>_II/UIM | 6739 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | datob<3>_II | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | C3/_n0009 | 6800 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | C3/_n0009_MC.Q | C3/_n0009_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | resm<7>_MC.D1 | 6822 | ? | 0 | 0 | resm<7>_MC | NULL | NULL | resm<7>_MC.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 11 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datob<1>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | datoa<3>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | resm<7>_MC.D2 | 6823 | ? | 0 | 0 | resm<7>_MC | NULL | NULL | resm<7>_MC.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+
+SRFF_INSTANCE | resm<7>_MC.REG | resm<7>_MC | 0 | 2 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | resm<7>_MC.D | 6821 | ? | 0 | 0 | resm<7>_MC | NULL | NULL | resm<7>_MC.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | resm<7>_MC.Q | 6824 | ? | 0 | 0 | resm<7>_MC | NULL | NULL | resm<7>_MC.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | resm<7> | ALU_COPY_0_COPY_0 | 3 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | resm<7>_MC.Q | 6825 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | resm<7>_MC.Q | resm<7>_MC | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | resm<7> | 6826 | PO | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | resm<7> | 0 | 6 | OI_OUT
+
+FB_INSTANCE | FOOBAR1_ | ALU_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | cableshif<0>_MC | 1 | datoa<3>_II | 1 | NULL | 0 | 38 | 49152
+FBPIN | 2 | cableshif<1>_MC | 1 | datoa<0>_II | 1 | NULL | 0 | 37 | 49152
+FBPIN | 3 | cableshif<2>_MC | 1 | datoa<1>_II | 1 | NULL | 0 | 36 | 49152
+FBPIN | 8 | N_PZ_134_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | cableshif<3>_MC | 1 | datoa<2>_II | 1 | NULL | 0 | 34 | 53248
+FBPIN | 10 | resm<4>_MC | 1 | NULL | 0 | resm<4> | 1 | 33 | 53248
+FBPIN | 11 | resm<6>_MC | 1 | NULL | 0 | resm<6> | 1 | 32 | 53248
+FBPIN | 12 | NULL | 0 | datob<2>_II | 1 | NULL | 0 | 31 | 53248
+FBPIN | 13 | NULL | 0 | datob<3>_II | 1 | NULL | 0 | 30 | 51200
+FBPIN | 14 | N_PZ_161_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 15 | C6/Mmux__n0009_I1_Result2_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | C3/_n0009_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR2_ | ALU_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | resm<5>_MC | 1 | NULL | 0 | resm<5> | 1 | 39 | 49152
+FBPIN | 2 | resm<7>_MC | 1 | NULL | 0 | resm<7> | 1 | 40 | 49152
+FBPIN | 5 | resm<3>_MC | 1 | NULL | 0 | resm<3> | 1 | 41 | 49152
+FBPIN | 6 | resm<2>_MC | 1 | NULL | 0 | resm<2> | 1 | 42 | 49152
+FBPIN | 7 | NULL | 0 | CLK_II | 1 | NULL | 0 | 43 | 57344
+FBPIN | 8 | resm<1>_MC | 1 | NULL | 0 | resm<1> | 1 | 44 | 57344
+FBPIN | 10 | resm<0>_MC | 1 | NULL | 0 | resm<0> | 1 | 1 | 57344
+FBPIN | 11 | N_PZ_68_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 12 | NULL | 0 | datob<0>_II | 1 | NULL | 0 | 2 | 49152
+FBPIN | 13 | NULL | 0 | datob<1>_II | 1 | NULL | 0 | 3 | 49152
+FBPIN | 14 | N_PZ_78_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 15 | C3/Mxor_p<3>__n0001_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 16 | C1/cable<2>_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR3_ | ALU_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | res<3>_MC | 1 | NULL | 0 | res<3> | 1 | 29 | 49152
+FBPIN | 2 | res<2>_MC | 1 | NULL | 0 | res<2> | 1 | 28 | 49152
+FBPIN | 3 | res<0>_MC | 1 | NULL | 0 | res<0> | 1 | 27 | 49152
+FBPIN | 4 | N_PZ_51_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 5 | N_PZ_50_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 6 | res<1>_MC | 1 | NULL | 0 | res<1> | 1 | 23 | 49152
+FBPIN | 7 | cableshifr<1>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 8 | cableshifr<0>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 9 | cableshifr<3>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 10 | NULL | 0 | selecs<0>_II | 1 | NULL | 0 | 22 | 49152
+FBPIN | 11 | NULL | 0 | selecs<1>_II | 1 | NULL | 0 | 21 | 49152
+FBPIN | 12 | N_PZ_109_MC | 1 | selecs<2>_II | 1 | NULL | 0 | 20 | 49152
+FBPIN | 13 | cableshifr<2>_MC | 1 | NULL | 0 | NULL | 0
+FBPIN | 14 | N_PZ_90_MC | 1 | NULL | 0 | NULL | 0 | 19 | 49152
+FBPIN | 15 | N_PZ_76_MC | 1 | NULL | 0 | NULL | 0 | 18 | 49152
+FBPIN | 16 | N_PZ_48_MC | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR4_ | ALU_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | ALU_COPY_0_COPY_0 | 0 | 0 | 0
+
+CT_INSTANCE | FOOBAR1_ | FOOBAR1__ctinst | ALU_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR1__ctinst/4 | 6805 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR1__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+
+CT_INSTANCE | FOOBAR2_ | FOOBAR2__ctinst | ALU_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR2__ctinst/4 | 6765 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR2__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+
+CT_INSTANCE | FOOBAR3_ | FOOBAR3__ctinst | ALU_COPY_0_COPY_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | N_PZ_68 | 6659 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | N_PZ_68_MC.Q | N_PZ_68_MC | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 12 | CT_SI4
+SIGNAL | NODE | FOOBAR3__ctinst/4 | 6658 | ? | 0 | 0 | ALU_COPY_0_COPY_0 | NULL | NULL | FOOBAR3__ctinst | 4 | 12 | CT_SI4
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+
+CT_INSTANCE | FOOBAR4_ | FOOBAR4__ctinst | ALU_COPY_0_COPY_0 | 0 | 0 | 0
+
+PLA | FOOBAR1_ | 56
+PLA_TERM | 0 | 
+SPPTERM | 7 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_FALSE | C3/_n0009
+PLA_TERM | 1 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 2 | 
+SPPTERM | 7 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+PLA_TERM | 3 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+PLA_TERM | 5 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+PLA_TERM | 6 | 
+SPPTERM | 9 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 7 | 
+SPPTERM | 10 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 8 | 
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76 | IV_FALSE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 9 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_76 | IV_TRUE | N_PZ_51 | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 10 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+PLA_TERM | 11 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_FALSE | N_PZ_51 | IV_FALSE | C3/_n0009
+PLA_TERM | 12 | 
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_78 | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 13 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+PLA_TERM | 14 | 
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 15 | 
+SPPTERM | 10 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 16 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+PLA_TERM | 17 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 18 | 
+SPPTERM | 8 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 19 | 
+SPPTERM | 9 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | C3/_n0009
+PLA_TERM | 20 | 
+SPPTERM | 9 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+PLA_TERM | 21 | 
+SPPTERM | 9 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_78 | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | C3/_n0009
+PLA_TERM | 22 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_76 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48
+PLA_TERM | 23 | 
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM
+PLA_TERM | 24 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_50 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+PLA_TERM | 25 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_TRUE | C3/_n0009
+PLA_TERM | 26 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_FALSE | N_PZ_48 | IV_TRUE | C3/_n0009
+PLA_TERM | 27 | 
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_TRUE | C3/_n0009
+PLA_TERM | 28 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76 | IV_TRUE | N_PZ_48 | IV_TRUE | C3/_n0009
+PLA_TERM | 29 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+PLA_TERM | 30 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+PLA_TERM | 31 | 
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48
+PLA_TERM | 32 | 
+SPPTERM | 5 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001
+PLA_TERM | 33 | 
+SPPTERM | 5 | IV_FALSE | datob<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001
+PLA_TERM | 34 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+PLA_TERM | 35 | 
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001
+PLA_TERM | 36 | 
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48
+PLA_TERM | 37 | 
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+PLA_TERM | 38 | 
+SPPTERM | 6 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76 | IV_FALSE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48
+PLA_TERM | 39 | 
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001
+PLA_TERM | 40 | 
+SPPTERM | 7 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | N_PZ_78 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+PLA_TERM | 41 | 
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48
+PLA_TERM | 42 | 
+SPPTERM | 5 | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_76 | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48
+PLA_TERM | 43 | 
+SPPTERM | 6 | IV_TRUE | N_PZ_90 | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+PLA_TERM | 44 | 
+SPPTERM | 6 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | N_PZ_50
+PLA_TERM | 45 | 
+SPPTERM | 7 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_FALSE | N_PZ_51
+PLA_TERM | 46 | 
+SPPTERM | 6 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51
+PLA_TERM | 47 | 
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76
+PLA_TERM | 48 | 
+SPPTERM | 7 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76
+PLA_TERM | 49 | 
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76
+PLA_TERM | 50 | 
+SPPTERM | 6 | IV_FALSE | datob<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_50 | IV_TRUE | N_PZ_109
+PLA_TERM | 51 | 
+SPPTERM | 6 | IV_FALSE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_50 | IV_TRUE | N_PZ_109
+PLA_TERM | 52 | 
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_78 | IV_TRUE | N_PZ_109
+PLA_TERM | 53 | 
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | N_PZ_78 | IV_FALSE | N_PZ_109
+PLA_TERM | 54 | 
+SPPTERM | 2 | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM
+PLA_TERM | 55 | 
+SPPTERM | 2 | IV_FALSE | N_PZ_78 | IV_FALSE | N_PZ_109
+
+PLA | FOOBAR2_ | 56
+PLA_TERM | 0 | 
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<1>_II/UIM | IV_TRUE | datoa<1>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 6 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<1>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 6 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<1>_II/UIM | IV_FALSE | datoa<1>_II/UIM
+PLA_TERM | 3 | 
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datoa<1>_II/UIM
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+PLA_TERM | 5 | 
+SPPTERM | 6 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | N_PZ_50
+PLA_TERM | 6 | 
+SPPTERM | 6 | IV_FALSE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_50
+PLA_TERM | 7 | 
+SPPTERM | 6 | IV_FALSE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | N_PZ_50
+PLA_TERM | 8 | 
+SPPTERM | 7 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_FALSE | N_PZ_50
+PLA_TERM | 9 | 
+SPPTERM | 7 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_50
+PLA_TERM | 10 | 
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_109
+PLA_TERM | 11 | 
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | datoa<3>_II/UIM | IV_TRUE | C3/Mxor_p<3>__n0001
+PLA_TERM | 12 | 
+SPPTERM | 8 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | datoa<3>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001
+PLA_TERM | 13 | 
+SPPTERM | 11 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datob<1>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | datoa<3>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+PLA_TERM | 14 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+PLA_TERM | 15 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+PLA_TERM | 16 | 
+SPPTERM | 8 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_50 | IV_TRUE | C3/Mxor_p<3>__n0001
+PLA_TERM | 17 | 
+SPPTERM | 7 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_TRUE | N_PZ_51 | IV_FALSE | C3/Mxor_p<3>__n0001
+PLA_TERM | 18 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+PLA_TERM | 19 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | N_PZ_51 | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48
+PLA_TERM | 20 | 
+SPPTERM | 7 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001
+PLA_TERM | 21 | 
+SPPTERM | 8 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_FALSE | C3/Mxor_p<3>__n0001
+PLA_TERM | 22 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_FALSE | C3/Mxor_p<3>__n0001 | IV_TRUE | N_PZ_48
+PLA_TERM | 23 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_51 | IV_TRUE | C3/Mxor_p<3>__n0001 | IV_FALSE | N_PZ_48
+PLA_TERM | 24 | 
+SPPTERM | 6 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_FALSE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+PLA_TERM | 25 | 
+SPPTERM | 6 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | C3/_n0009
+PLA_TERM | 26 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_TRUE | C3/_n0009
+PLA_TERM | 27 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_50 | IV_FALSE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_TRUE | C3/_n0009
+PLA_TERM | 28 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | N_PZ_76 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+PLA_TERM | 29 | 
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_TRUE | C3/_n0009
+PLA_TERM | 30 | 
+SPPTERM | 6 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | C3/_n0009
+PLA_TERM | 31 | 
+SPPTERM | 6 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | C3/_n0009
+PLA_TERM | 32 | 
+SPPTERM | 7 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | C3/_n0009
+PLA_TERM | 33 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 34 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_50 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+PLA_TERM | 35 | 
+SPPTERM | 8 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_TRUE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+PLA_TERM | 36 | 
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 37 | 
+SPPTERM | 5 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM
+PLA_TERM | 38 | 
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<1>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 39 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 40 | 
+SPPTERM | 8 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51 | IV_FALSE | datob<3>_II/UIM | IV_FALSE | C3/_n0009
+PLA_TERM | 41 | 
+SPPTERM | 9 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<2>_II/UIM | IV_FALSE | N_PZ_76 | IV_TRUE | datob<3>_II/UIM | IV_TRUE | N_PZ_48 | IV_FALSE | C3/_n0009
+PLA_TERM | 42 | 
+SPPTERM | 2 | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM
+PLA_TERM | 43 | 
+SPPTERM | 2 | IV_TRUE | N_PZ_50 | IV_TRUE | N_PZ_51
+PLA_TERM | 44 | 
+SPPTERM | 4 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | datoa<2>_II/UIM | IV_TRUE | N_PZ_76
+PLA_TERM | 45 | 
+SPPTERM | 2 | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_50
+PLA_TERM | 46 | 
+SPPTERM | 4 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_76
+PLA_TERM | 47 | 
+SPPTERM | 5 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_TRUE | N_PZ_50 | IV_TRUE | datob<3>_II/UIM
+PLA_TERM | 48 | 
+SPPTERM | 5 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<2>_II/UIM | IV_FALSE | N_PZ_78 | IV_TRUE | N_PZ_50 | IV_FALSE | datob<3>_II/UIM
+PLA_TERM | 49 | 
+SPPTERM | 4 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | datoa<2>_II/UIM
+PLA_TERM | 50 | 
+SPPTERM | 3 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | N_PZ_90 | IV_TRUE | N_PZ_50
+PLA_TERM | 51 | 
+SPPTERM | 2 | IV_FALSE | datoa<1>_II/UIM | IV_TRUE | N_PZ_76
+PLA_TERM | 52 | 
+SPPTERM | 2 | IV_TRUE | datoa<0>_II/UIM | IV_TRUE | datob<3>_II/UIM
+PLA_TERM | 53 | 
+SPPTERM | 3 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_FALSE | N_PZ_76
+PLA_TERM | 54 | 
+SPPTERM | 2 | IV_TRUE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM
+PLA_TERM | 55 | 
+SPPTERM | 2 | IV_TRUE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM
+
+PLA | FOOBAR3_ | 42
+PLA_TERM | 0 | 
+SPPTERM | 4 | IV_FALSE | datob<0>_II/UIM | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM
+PLA_TERM | 1 | 
+SPPTERM | 4 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM
+PLA_TERM | 2 | 
+SPPTERM | 4 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | cableshif<0>
+PLA_TERM | 3 | 
+SPPTERM | 4 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | cableshifr<0>
+PLA_TERM | 4 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_68
+PLA_TERM | 5 | 
+SPPTERM | 4 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | cableshif<1>
+PLA_TERM | 6 | 
+SPPTERM | 4 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | cableshifr<1>
+PLA_TERM | 7 | 
+SPPTERM | 4 | IV_FALSE | datob<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | N_PZ_76
+PLA_TERM | 8 | 
+SPPTERM | 5 | IV_TRUE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | N_PZ_76
+PLA_TERM | 9 | 
+SPPTERM | 5 | IV_FALSE | datoa<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | N_PZ_76
+PLA_TERM | 10 | 
+SPPTERM | 2 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | datob<3>_II/UIM
+PLA_TERM | 11 | 
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_76 | IV_TRUE | N_PZ_78
+PLA_TERM | 12 | 
+SPPTERM | 6 | IV_TRUE | datob<0>_II/UIM | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | N_PZ_76 | IV_FALSE | N_PZ_78
+PLA_TERM | 13 | 
+SPPTERM | 2 | IV_FALSE | C6/Mmux__n0009_I1_Result2 | IV_FALSE | N_PZ_161
+PLA_TERM | 14 | 
+SPPTERM | 7 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | C6/Mmux__n0009_I1_Result2 | IV_FALSE | N_PZ_161 | IV_TRUE | cableshif<2>
+PLA_TERM | 15 | 
+SPPTERM | 6 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | C6/Mmux__n0009_I1_Result2 | IV_FALSE | N_PZ_161 | IV_TRUE | cableshifr<2>
+PLA_TERM | 16 | 
+SPPTERM | 6 | IV_TRUE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | C6/Mmux__n0009_I1_Result2 | IV_FALSE | N_PZ_161 | IV_TRUE | cableshifr<2>
+PLA_TERM | 17 | 
+SPPTERM | 4 | IV_TRUE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | cableshif<3>
+PLA_TERM | 18 | 
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datob<3>_II/UIM | IV_TRUE | cableshifr<3>
+PLA_TERM | 19 | 
+SPPTERM | 2 | IV_TRUE | datob<1>_II/UIM | IV_TRUE | datoa<2>_II/UIM
+PLA_TERM | 20 | 
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datob<3>_II/UIM | IV_FALSE | cableshifr<3>
+PLA_TERM | 21 | 
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_FALSE | datoa<3>_II/UIM | IV_TRUE | C1/cable<2>
+PLA_TERM | 22 | 
+SPPTERM | 2 | IV_TRUE | datob<1>_II/UIM | IV_TRUE | datoa<1>_II/UIM
+PLA_TERM | 23 | 
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_FALSE | selecs<2>_II/UIM | IV_FALSE | selecs<0>_II/UIM | IV_TRUE | datoa<3>_II/UIM | IV_FALSE | C1/cable<2>
+PLA_TERM | 24 | 
+SPPTERM | 4 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_TRUE | N_PZ_68 | IV_TRUE | datob<3>_II/UIM
+PLA_TERM | 25 | 
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_TRUE | datoa<3>_II/UIM | IV_TRUE | N_PZ_134
+PLA_TERM | 26 | 
+SPPTERM | 5 | IV_FALSE | selecs<1>_II/UIM | IV_TRUE | selecs<0>_II/UIM | IV_FALSE | N_PZ_68 | IV_FALSE | datoa<3>_II/UIM | IV_FALSE | N_PZ_134
+PLA_TERM | 27 | 
+SPPTERM | 1 | IV_TRUE | datoa<3>_II/UIM
+PLA_TERM | 28 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+PLA_TERM | 29 | 
+SPPTERM | 1 | IV_TRUE | datoa<0>_II/UIM
+PLA_TERM | 30 | 
+SPPTERM | 1 | IV_TRUE | datoa<1>_II/UIM
+PLA_TERM | 31 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+PLA_TERM | 32 | 
+SPPTERM | 1 | IV_TRUE | datoa<2>_II/UIM
+PLA_TERM | 33 | 
+SPPTERM | 2 | IV_FALSE | datob<1>_II/UIM | IV_TRUE | datoa<1>_II/UIM
+PLA_TERM | 34 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+PLA_TERM | 35 | 
+SPPTERM | 2 | IV_TRUE | datob<1>_II/UIM | IV_FALSE | datoa<1>_II/UIM
+PLA_TERM | 36 | 
+SPPTERM | 2 | IV_TRUE | datob<2>_II/UIM | IV_TRUE | datob<1>_II/UIM
+PLA_TERM | 37 | 
+SPPTERM | 2 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datob<2>_II/UIM
+PLA_TERM | 38 | 
+SPPTERM | 2 | IV_FALSE | datob<2>_II/UIM | IV_TRUE | datoa<2>_II/UIM
+PLA_TERM | 39 | 
+SPPTERM | 2 | IV_TRUE | datob<2>_II/UIM | IV_FALSE | datoa<2>_II/UIM
+PLA_TERM | 46 | 
+SPPTERM | 1 | IV_TRUE | N_PZ_90
+PLA_TERM | 55 | 
+SPPTERM | 2 | IV_TRUE | datob<0>_II/UIM | IV_TRUE | datoa<3>_II/UIM
+
+BUSINFO | DATOA<3:0> | 4 | 0 | 0 | datoa<0> | 3 | datoa<1> | 2 | datoa<2> | 1 | datoa<3> | 0
+BUSINFO | DATOB<3:0> | 4 | 0 | 0 | datob<0> | 3 | datob<1> | 2 | datob<2> | 1 | datob<3> | 0
+BUSINFO | RES<3:0> | 4 | 0 | 1 | res<0> | 3 | res<1> | 2 | res<2> | 1 | res<3> | 0
+BUSINFO | RESM<7:0> | 8 | 0 | 1 | resm<0> | 7 | resm<1> | 6 | resm<2> | 5 | resm<3> | 4 | resm<4> | 3 | resm<5> | 2 | resm<6> | 1 | resm<7> | 0
+BUSINFO | SELECS<2:0> | 3 | 0 | 0 | selecs<0> | 2 | selecs<1> | 1 | selecs<2> | 0
+
+IOSTD | LVCMOS18
+CLK | LVCMOS18
+datob<0> | LVCMOS18
+datob<1> | LVCMOS18
+datob<2> | LVCMOS18
+datob<3> | LVCMOS18
+datoa<0> | LVCMOS18
+selecs<1> | LVCMOS18
+selecs<2> | LVCMOS18
+selecs<0> | LVCMOS18
+datoa<1> | LVCMOS18
+res<0> | LVCMOS18
+datoa<2> | LVCMOS18
+res<1> | LVCMOS18
+datoa<3> | LVCMOS18
+res<2> | LVCMOS18
+res<3> | LVCMOS18
+resm<0> | LVCMOS18
+resm<1> | LVCMOS18
+resm<2> | LVCMOS18
+resm<3> | LVCMOS18
+resm<4> | LVCMOS18
+resm<5> | LVCMOS18
+resm<6> | LVCMOS18
+resm<7> | LVCMOS18
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | datob<2> | 31 | 1 | C3/_n0009 | NULL | 2 | N_PZ_76 | NULL | 3 | selecs<0> | 22 | 5 | N_PZ_51 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 6 | N_PZ_48 | NULL | 7 | N_PZ_90 | NULL | 8 | N_PZ_78 | NULL | 9 | N_PZ_68 | NULL | 10 | N_PZ_109 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 13 | C3/Mxor_p<3>__n0001 | NULL | 14 | datob<3> | 30 | 15 | N_PZ_50 | NULL | 18 | selecs<2> | 20 | 19 | selecs<1> | 21
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 20 | datoa<1> | 36 | 22 | datoa<0> | 37 | 24 | datob<0> | 2 | 32 | datoa<2> | 34
+
+FB_IMUX_INDEX | FOOBAR1_ | 11 | 79 | 110 | 41 | -1 | 99 | 111 | 109 | 93 | 90 | 107 | -1 | -1 | 94 | 12 | 100 | -1 | -1 | 43 | 42 | 2 | -1 | 1 | -1 | 27 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 8 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | datob<2> | 31 | 1 | C3/_n0009 | NULL | 2 | N_PZ_76 | NULL | 3 | selecs<0> | 22 | 5 | N_PZ_51 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 6 | N_PZ_48 | NULL | 7 | N_PZ_90 | NULL | 8 | N_PZ_78 | NULL | 9 | N_PZ_68 | NULL | 10 | N_PZ_109 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 11 | datob<1> | 3 | 12 | datoa<3> | 38 | 13 | C3/Mxor_p<3>__n0001 | NULL | 14 | datob<3> | 30 | 15 | N_PZ_50 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 18 | selecs<2> | 20 | 19 | selecs<1> | 21 | 20 | datoa<1> | 36 | 22 | datoa<0> | 37 | 24 | datob<0> | 2
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 32 | datoa<2> | 34
+
+FB_IMUX_INDEX | FOOBAR2_ | 11 | 79 | 110 | 41 | -1 | 99 | 111 | 109 | 93 | 90 | 107 | 28 | 0 | 94 | 12 | 100 | -1 | -1 | 43 | 42 | 2 | -1 | 1 | -1 | 27 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 8 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 0 | cableshifr<3> | NULL | 1 | datob<3> | 30 | 2 | N_PZ_76 | NULL | 3 | cableshifr<0> | NULL | 4 | C1/cable<2> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 5 | cableshif<1> | NULL | 6 | N_PZ_161 | NULL | 7 | N_PZ_90 | NULL | 8 | cableshifr<2> | NULL | 9 | N_PZ_68 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 10 | cableshifr<1> | NULL | 11 | datob<1> | 3 | 12 | cableshif<0> | NULL | 13 | N_PZ_134 | NULL | 15 | datoa<2> | 34
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 16 | cableshif<3> | NULL | 17 | N_PZ_78 | NULL | 18 | selecs<2> | 20 | 19 | cableshif<2> | NULL | 20 | C6/Mmux__n0009_I1_Result2 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 21 | selecs<0> | 22 | 22 | datoa<0> | 37 | 23 | datoa<1> | 36 | 24 | datob<0> | 2 | 26 | selecs<1> | 21
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 28 | datob<2> | 31 | 35 | datoa<3> | 38
+
+FB_IMUX_INDEX | FOOBAR3_ | 104 | 12 | 110 | 103 | 95 | 65 | 77 | 109 | 108 | 90 | 102 | 28 | 64 | 71 | -1 | 8 | 72 | 93 | 43 | 66 | 78 | 41 | 1 | 2 | 27 | -1 | 42 | -1 | 11 | -1 | -1 | -1 | -1 | -1 | -1 | 0 | -1 | -1 | -1 | -1
+
+
+GLOBAL_FCLK | CLK | 0 | 0

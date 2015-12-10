@@ -1,0 +1,10 @@
+AR rshifsim testbench_arch D:/Documentos/XILINXPROYECTOS/aluparc/rshifsim.vhw sub00/vhpl05 1176681115
+EN alusim NULL D:/Documentos/XILINXPROYECTOS/aluparc/alusim.vhw sub00/vhpl00 1176687039
+MO rightshifter NULL D:/Documentos/XILINXPROYECTOS/aluparc/netgen/par/rightshifter_timesim.v vlg73/rightshifter.bin 1176680236
+MO leftshifter NULL D:/Documentos/XILINXPROYECTOS/aluparc/netgen/par/leftshifter_timesim.v vlg68/leftshifter.bin 1176686206
+EN leftsim NULL D:/Documentos/XILINXPROYECTOS/aluparc/leftsim.vhw sub00/vhpl02 1176686211
+AR leftsim testbench_arch D:/Documentos/XILINXPROYECTOS/aluparc/leftsim.vhw sub00/vhpl03 1176686212
+AR alusim testbench_arch D:/Documentos/XILINXPROYECTOS/aluparc/alusim.vhw sub00/vhpl01 1176687040
+MO glbl NULL D:/PROGRAMAS/Xilinxs/verilog/src/glbl.v vlg2D/glbl.bin 1176687037
+EN rshifsim NULL D:/Documentos/XILINXPROYECTOS/aluparc/rshifsim.vhw sub00/vhpl04 1176681114
+MO ALU NULL D:/Documentos/XILINXPROYECTOS/aluparc/netgen/par/ALU_timesim.v vlg2A/_a_l_u.bin 1176687032

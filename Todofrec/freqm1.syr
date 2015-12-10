@@ -1,0 +1,639 @@
+Release 9.1i - xst J.30
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.41 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.41 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: freqm1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "freqm1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "freqm1"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : freqm1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : freqm1.lso
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/freqm1 is now defined in a different file.  It was defined in "D:/Todofrec/freqm1.vhd", and is now defined in "D:/Todofrec/freqm1.vhf".
+WARNING:HDLParsers:3607 - Unit work/freqm1/BEHAVIORAL is now defined in a different file.  It was defined in "D:/Todofrec/freqm1.vhd", and is now defined in "D:/Todofrec/freqm1.vhf".
+Compiling vhdl file "D:/Todofrec/hex2led.vhd" in Library work.
+Architecture behav of Entity hex2led is up to date.
+Compiling vhdl file "D:/Todofrec/bcd_cnt.vhd" in Library work.
+Architecture cnt_bcd of Entity cnt_bcd is up to date.
+Compiling vhdl file "D:/Todofrec/control.vhd" in Library work.
+Architecture control_arch of Entity control is up to date.
+Compiling vhdl file "D:/Todofrec/mux16_4.vhd" in Library work.
+Architecture behavioral of Entity mux16_4 is up to date.
+Compiling vhdl file "D:/Todofrec/divisorfrec.vhd" in Library work.
+Architecture behavioral of Entity divisorfrec is up to date.
+Compiling vhdl file "D:/Todofrec/cont.vhd" in Library work.
+Entity <cont> compiled.
+Entity <cont> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/Todofrec/m2_4.vhd" in Library work.
+Architecture behavioral of Entity m2_4 is up to date.
+Compiling vhdl file "D:/Todofrec/div1M.vhd" in Library work.
+Architecture behavioral of Entity div1m is up to date.
+Compiling vhdl file "D:/Todofrec/freqm1.vhf" in Library work.
+Entity <freqm1> compiled.
+Entity <freqm1> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <freqm1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <hex2led> in library <work> (architecture <behav>).
+
+Analyzing hierarchy for entity <cnt_bcd> in library <work> (architecture <cnt_bcd>).
+
+Analyzing hierarchy for entity <control> in library <work> (architecture <control_arch>).
+
+Analyzing hierarchy for entity <mux16_4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <divisorfrec> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <cont> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <m2_4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <div1M> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <freqm1> in library <work> (Architecture <behavioral>).
+Entity <freqm1> analyzed. Unit <freqm1> generated.
+
+Analyzing Entity <hex2led> in library <work> (Architecture <behav>).
+Entity <hex2led> analyzed. Unit <hex2led> generated.
+
+Analyzing Entity <cnt_bcd> in library <work> (Architecture <cnt_bcd>).
+Entity <cnt_bcd> analyzed. Unit <cnt_bcd> generated.
+
+Analyzing Entity <control> in library <work> (Architecture <control_arch>).
+Entity <control> analyzed. Unit <control> generated.
+
+Analyzing Entity <mux16_4> in library <work> (Architecture <behavioral>).
+Entity <mux16_4> analyzed. Unit <mux16_4> generated.
+
+Analyzing Entity <divisorfrec> in library <work> (Architecture <behavioral>).
+Entity <divisorfrec> analyzed. Unit <divisorfrec> generated.
+
+Analyzing Entity <cont> in library <work> (Architecture <behavioral>).
+Entity <cont> analyzed. Unit <cont> generated.
+
+Analyzing Entity <m2_4> in library <work> (Architecture <behavioral>).
+Entity <m2_4> analyzed. Unit <m2_4> generated.
+
+Analyzing Entity <div1M> in library <work> (Architecture <behavioral>).
+Entity <div1M> analyzed. Unit <div1M> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <hex2led>.
+    Related source file is "D:/Todofrec/hex2led.vhd".
+    Found 16x7-bit ROM for signal <LED>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <hex2led> synthesized.
+
+
+Synthesizing Unit <cnt_bcd>.
+    Related source file is "D:/Todofrec/bcd_cnt.vhd".
+    Found 4-bit up counter for signal <COUNTER_D>.
+    Found 4-bit up counter for signal <COUNTER_H>.
+    Found 4-bit up counter for signal <COUNTER_T>.
+    Found 4-bit up counter for signal <COUNTER_U>.
+    Summary:
+	inferred   4 Counter(s).
+Unit <cnt_bcd> synthesized.
+
+
+Synthesizing Unit <control>.
+    Related source file is "D:/Todofrec/control.vhd".
+    Found finite state machine <FSM_0> for signal <Sreg0>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RESET (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | end_cycle                                      |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <END_MEASURE>.
+    Found 1-bit register for signal <GATE>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 D-type flip-flop(s).
+Unit <control> synthesized.
+
+
+Synthesizing Unit <mux16_4>.
+    Related source file is "D:/Todofrec/mux16_4.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <sal>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <mux16_4> synthesized.
+
+
+Synthesizing Unit <divisorfrec>.
+    Related source file is "D:/Todofrec/divisorfrec.vhd".
+    Found 10-bit up counter for signal <numero>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <divisorfrec> synthesized.
+
+
+Synthesizing Unit <cont>.
+    Related source file is "D:/Todofrec/cont.vhd".
+    Found 2-bit up counter for signal <k>.
+    Found 2-bit comparator less for signal <k$cmp_lt0000> created at line 41.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <cont> synthesized.
+
+
+Synthesizing Unit <m2_4>.
+    Related source file is "D:/Todofrec/m2_4.vhd".
+    Found 1-of-4 decoder for signal <l>.
+    Summary:
+	inferred   1 Decoder(s).
+Unit <m2_4> synthesized.
+
+
+Synthesizing Unit <div1M>.
+    Related source file is "D:/Todofrec/div1M.vhd".
+    Found 1-bit register for signal <g>.
+    Found 5-bit comparator less for signal <g$cmp_lt0000> created at line 42.
+    Found 5-bit up counter for signal <k>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <div1M> synthesized.
+
+
+Synthesizing Unit <freqm1>.
+    Related source file is "D:/Todofrec/freqm1.vhf".
+Unit <freqm1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 7
+ 10-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+ 5-bit up counter                                      : 1
+# Registers                                            : 3
+ 1-bit register                                        : 3
+# Comparators                                          : 2
+ 2-bit comparator less                                 : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <I6/Sreg0> on signal <Sreg0[1:2]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ end_cycle | 00
+ idle      | 01
+ open_gate | 11
+-----------------------
+Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx91i.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Counters                                             : 7
+ 10-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 4
+ 5-bit up counter                                      : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Comparators                                          : 2
+ 2-bit comparator less                                 : 1
+ 5-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <freqm1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block freqm1, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : freqm1.ngr
+Top Level Output File Name         : freqm1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 16
+
+Cell Usage :
+# BELS                             : 102
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 9
+#      LUT2                        : 10
+#      LUT3                        : 18
+#      LUT3_D                      : 1
+#      LUT4                        : 27
+#      LUT4_D                      : 1
+#      LUT4_L                      : 2
+#      MUXCY                       : 9
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 9
+# FlipFlops/Latches                : 38
+#      FDC                         : 2
+#      FDCE                        : 16
+#      FDE                         : 1
+#      FDP                         : 2
+#      FDR                         : 17
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 14
+#      IBUF                        : 2
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      38  out of   1920     1%  
+ Number of Slice Flip Flops:            38  out of   3840     0%  
+ Number of 4 input LUTs:                76  out of   3840     1%  
+ Number of IOs:                         16
+ Number of bonded IOBs:                 16  out of    173     9%  
+ Number of GCLKs:                        2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+F_PATTERN                          | BUFGP                  | 4     |
+F_INPUT                            | BUFGP                  | 16    |
+XLXI_16/g                          | NONE(I5/COUNTER_T_3)   | 16    |
+XLXI_7/numero_9                    | NONE(XLXI_13/k_1)      | 2     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+RESET                              | IBUF                   | 4     |
+I6/END_MEASURE(I6/END_MEASURE:Q)   | NONE(I5/COUNTER_T_3)   | 16    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.394ns (Maximum Frequency: 135.245MHz)
+   Minimum input arrival time before clock: 2.831ns
+   Maximum output required time after clock: 11.559ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'F_PATTERN'
+  Clock period: 2.730ns (frequency: 366.300MHz)
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Delay:               2.730ns (Levels of Logic = 1)
+  Source:            I6/Sreg0_FFd1 (FF)
+  Destination:       I6/Sreg0_FFd2 (FF)
+  Source Clock:      F_PATTERN rising
+  Destination Clock: F_PATTERN rising
+
+  Data Path: I6/Sreg0_FFd1 to I6/Sreg0_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.720   1.256  I6/Sreg0_FFd1 (I6/Sreg0_FFd1)
+     LUT3:I0->O            1   0.551   0.000  I6/Sreg0_FFd2-In1 (I6/Sreg0_FFd2-In)
+     FDP:D                     0.203          I6/Sreg0_FFd2
+    ----------------------------------------
+    Total                      2.730ns (1.474ns logic, 1.256ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'F_INPUT'
+  Clock period: 6.025ns (frequency: 165.975MHz)
+  Total number of paths / destination ports: 205 / 32
+-------------------------------------------------------------------------
+Delay:               6.025ns (Levels of Logic = 2)
+  Source:            XLXI_7/numero_1 (FF)
+  Destination:       XLXI_7/numero_0 (FF)
+  Source Clock:      F_INPUT rising
+  Destination Clock: F_INPUT rising
+
+  Data Path: XLXI_7/numero_1 to XLXI_7/numero_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.720   1.216  XLXI_7/numero_1 (XLXI_7/numero_1)
+     LUT4:I0->O            1   0.551   0.827  XLXI_7/numero_cmp_eq000018 (XLXI_7/numero_cmp_eq0000_map8)
+     LUT4:I3->O           10   0.551   1.134  XLXI_7/numero_cmp_eq000031 (XLXI_7/numero_cmp_eq0000)
+     FDR:R                     1.026          XLXI_7/numero_0
+    ----------------------------------------
+    Total                      6.025ns (2.848ns logic, 3.177ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_16/g'
+  Clock period: 7.394ns (frequency: 135.245MHz)
+  Total number of paths / destination ports: 398 / 32
+-------------------------------------------------------------------------
+Delay:               7.394ns (Levels of Logic = 3)
+  Source:            I5/COUNTER_T_3 (FF)
+  Destination:       I5/COUNTER_U_0 (FF)
+  Source Clock:      XLXI_16/g rising
+  Destination Clock: XLXI_16/g rising
+
+  Data Path: I5/COUNTER_T_3 to I5/COUNTER_U_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.720   1.246  I5/COUNTER_T_3 (I5/COUNTER_T_3)
+     LUT4:I0->O            1   0.551   1.140  I5/IS_9999_and000010 (I5/IS_9999_and0000_map4)
+     LUT4:I0->O            5   0.551   1.116  I5/IS_9999_and000052 (FULL_OBUF)
+     LUT2:I1->O            4   0.551   0.917  I5/COUNTER_U_and00001 (I5/COUNTER_U_and0000)
+     FDCE:CE                   0.602          I5/COUNTER_U_0
+    ----------------------------------------
+    Total                      7.394ns (2.975ns logic, 4.419ns route)
+                                       (40.2% logic, 59.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_7/numero_9'
+  Clock period: 4.701ns (frequency: 212.721MHz)
+  Total number of paths / destination ports: 7 / 4
+-------------------------------------------------------------------------
+Delay:               4.701ns (Levels of Logic = 1)
+  Source:            XLXI_13/k_0 (FF)
+  Destination:       XLXI_13/k_0 (FF)
+  Source Clock:      XLXI_7/numero_9 rising
+  Destination Clock: XLXI_7/numero_9 rising
+
+  Data Path: XLXI_13/k_0 to XLXI_13/k_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.720   1.527  XLXI_13/k_0 (XLXI_13/k_0)
+     LUT2:I0->O            2   0.551   0.877  XLXI_13/k_not00011 (XLXI_13/k_not0001)
+     FDR:R                     1.026          XLXI_13/k_0
+    ----------------------------------------
+    Total                      4.701ns (2.297ns logic, 2.404ns route)
+                                       (48.9% logic, 51.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'F_PATTERN'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              2.831ns (Levels of Logic = 2)
+  Source:            START (PAD)
+  Destination:       I6/END_MEASURE (FF)
+  Destination Clock: F_PATTERN rising
+
+  Data Path: START to I6/END_MEASURE
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.821   1.256  START_IBUF (START_IBUF)
+     LUT3:I0->O            1   0.551   0.000  I6/GATE_mux00011 (I6/GATE_mux0001)
+     FDC:D                     0.203          I6/GATE
+    ----------------------------------------
+    Total                      2.831ns (1.575ns logic, 1.256ns route)
+                                       (55.6% logic, 44.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_16/g'
+  Total number of paths / destination ports: 128 / 8
+-------------------------------------------------------------------------
+Offset:              11.310ns (Levels of Logic = 4)
+  Source:            I5/COUNTER_U_2 (FF)
+  Destination:       LED_D<1> (PAD)
+  Source Clock:      XLXI_16/g rising
+
+  Data Path: I5/COUNTER_U_2 to LED_D<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             8   0.720   1.278  I5/COUNTER_U_2 (I5/COUNTER_U_2)
+     LUT3:I1->O            1   0.551   0.000  XLXI_5/Mmux_sal_42 (N71)
+     MUXF5:I0->O           7   0.360   1.405  XLXI_5/Mmux_sal_2_f5_1 (XLXN_9<2>)
+     LUT4:I0->O            1   0.551   0.801  I1/Mrom_LED21 (I1/Mrom_LED1)
+     OBUF:I->O                 5.644          LED_D_1_OBUF (LED_D<1>)
+    ----------------------------------------
+    Total                     11.310ns (7.826ns logic, 3.484ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_7/numero_9'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              11.559ns (Levels of Logic = 4)
+  Source:            XLXI_13/k_0 (FF)
+  Destination:       LED_D<6> (PAD)
+  Source Clock:      XLXI_7/numero_9 rising
+
+  Data Path: XLXI_13/k_0 to LED_D<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             15   0.720   1.527  XLXI_13/k_0 (XLXI_13/k_0)
+     LUT3:I0->O            1   0.551   0.000  XLXI_5/Mmux_sal_31 (N41)
+     MUXF5:I1->O           7   0.360   1.405  XLXI_5/Mmux_sal_2_f5_0 (XLXN_9<1>)
+     LUT4:I0->O            1   0.551   0.801  I1/Mrom_LED31 (I1/Mrom_LED2)
+     OBUF:I->O                 5.644          LED_D_2_OBUF (LED_D<2>)
+    ----------------------------------------
+    Total                     11.559ns (7.826ns logic, 3.733ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+CPU : 8.25 / 8.70 s | Elapsed : 9.00 / 9.00 s
+ 
+--> 
+
+Total memory usage is 146220 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

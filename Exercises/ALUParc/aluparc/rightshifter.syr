@@ -1,0 +1,336 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.39 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.39 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: rightshifter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+     4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+     5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "rightshifter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "rightshifter"
+Output Format                      : NGC
+Target Device                      : xa3s200-4-ftg256
+
+---- Source Options
+Top Module Name                    : rightshifter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : rightshifter.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/rightshifter.vhd" in Library work.
+Architecture despright of Entity rightshifter is up to date.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <rightshifter> (Architecture <despright>).
+Entity <rightshifter> analyzed. Unit <rightshifter> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <rightshifter>.
+    Related source file is "D:/Documentos/XILINXPROYECTOS/aluparc/rightshifter.vhd".
+WARNING:Xst:647 - Input <DESR<3>> is never used.
+    Found 32-bit comparator less for signal <$n0001> created at line 49.
+    Found 32-bit up counter for signal <i>.
+    Found 4-bit register for signal <tmpo>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   4 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <rightshifter> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Loading device for application Rf_Device from file '3s200.nph' in environment D:\PROGRAMAS\Xilinxs.
+
+Optimizing unit <rightshifter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block rightshifter, actual ratio is 1.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : rightshifter.ngr
+Top Level Output File Name         : rightshifter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 119
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 7
+#      LUT1_L                      : 24
+#      LUT2_L                      : 3
+#      LUT4_L                      : 7
+#      MUXCY                       : 42
+#      VCC                         : 1
+#      XORCY                       : 31
+# FlipFlops/Latches                : 36
+#      FDC                         : 32
+#      FDE                         : 4
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 7
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : xa3s200ftg256-4 
+
+ Number of Slices:                      36  out of   1920     1%  
+ Number of Slice Flip Flops:            32  out of   3840     0%  
+ Number of 4 input LUTs:                41  out of   3840     1%  
+ Number of bonded IOBs:                 12  out of    173     6%  
+    IOB Flip Flops: 4
+ Number of GCLKs:                        1  out of      8    12%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLKR                               | BUFGP                  | 36    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.629ns (Maximum Frequency: 131.082MHz)
+   Minimum input arrival time before clock: 7.798ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKR'
+  Clock period: 7.629ns (frequency: 131.082MHz)
+  Total number of paths / destination ports: 668 / 36
+-------------------------------------------------------------------------
+Delay:               7.629ns (Levels of Logic = 13)
+  Source:            i_0 (FF)
+  Destination:       tmpo_0 (FF)
+  Source Clock:      CLKR rising
+  Destination Clock: CLKR rising
+
+  Data Path: i_0 to tmpo_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.720   1.072  i_0 (i_0)
+     LUT2_L:I1->LO         1   0.551   0.000  Mcompar__n0001_xnorlut (N4)
+     MUXCY:S->O            1   0.500   0.000  Mcompar__n0001_xnorcy (Mcompar__n0001_xnor_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_xnorcy_rn_0 (Mcompar__n0001_xnor_cyo1)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_xnorcy_rn_1 (Mcompar__n0001_xnor_cyo2)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy (Mcompar__n0001_nor_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_0 (Mcompar__n0001_nor_cyo1)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_1 (Mcompar__n0001_nor_cyo2)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_2 (Mcompar__n0001_nor_cyo3)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_3 (Mcompar__n0001_nor_cyo4)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_4 (Mcompar__n0001_nor_cyo5)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_5 (Mcompar__n0001_nor_cyo6)
+     MUXCY:CI->O          33   0.281   1.859  Mcompar__n0001_gecy (Mcompar__n0001_ge_cyo)
+     INV:I->O              4   0.551   0.917  Mcompar__n0001_ge_cyo_INV_INV_0 (_n0001)
+     FDE:CE                    0.602          tmpo_3
+    ----------------------------------------
+    Total                      7.629ns (3.781ns logic, 3.848ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKR'
+  Total number of paths / destination ports: 16 / 8
+-------------------------------------------------------------------------
+Offset:              7.798ns (Levels of Logic = 14)
+  Source:            DESR<0> (PAD)
+  Destination:       tmpo_0 (FF)
+  Destination Clock: CLKR rising
+
+  Data Path: DESR<0> to tmpo_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   1.140  DESR_0_IBUF (DESR_0_IBUF)
+     LUT2_L:I0->LO         1   0.551   0.000  Mcompar__n0001_xnorlut (N4)
+     MUXCY:S->O            1   0.500   0.000  Mcompar__n0001_xnorcy (Mcompar__n0001_xnor_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_xnorcy_rn_0 (Mcompar__n0001_xnor_cyo1)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_xnorcy_rn_1 (Mcompar__n0001_xnor_cyo2)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy (Mcompar__n0001_nor_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_0 (Mcompar__n0001_nor_cyo1)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_1 (Mcompar__n0001_nor_cyo2)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_2 (Mcompar__n0001_nor_cyo3)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_3 (Mcompar__n0001_nor_cyo4)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_4 (Mcompar__n0001_nor_cyo5)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar__n0001_norcy_rn_5 (Mcompar__n0001_nor_cyo6)
+     MUXCY:CI->O          33   0.281   1.859  Mcompar__n0001_gecy (Mcompar__n0001_ge_cyo)
+     INV:I->O              4   0.551   0.917  Mcompar__n0001_ge_cyo_INV_INV_0 (_n0001)
+     FDE:CE                    0.602          tmpo_3
+    ----------------------------------------
+    Total                      7.798ns (3.882ns logic, 3.916ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKR'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            tmpo_3 (FF)
+  Destination:       RIGHT<3> (PAD)
+  Source Clock:      CLKR rising
+
+  Data Path: tmpo_3 to RIGHT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.720   0.801  tmpo_3 (tmpo_3)
+     OBUF:I->O                 5.644          RIGHT_3_OBUF (RIGHT<3>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+CPU : 11.73 / 12.28 s | Elapsed : 11.00 / 12.00 s
+ 
+--> 
+
+Total memory usage is 108984 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

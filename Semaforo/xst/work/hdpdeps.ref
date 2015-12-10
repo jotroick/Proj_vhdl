@@ -1,0 +1,8 @@
+V3 4
+FL C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd 2007/10/24.23:18:56 J.30
+EN work/luz 1193323118 FL C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd \
+      PB ieee/std_logic_1164 1163575071 PB ieee/std_logic_arith 1163575072 \
+      PB ieee/STD_LOGIC_UNSIGNED 1163575073
+AR work/luz/semaforo 1193323119 \
+      FL C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd EN work/luz 1193323118
+FL $XILINX/Semaforo/semaforo_vhdl.vhd 2007/10/24.23:18:55 J.30

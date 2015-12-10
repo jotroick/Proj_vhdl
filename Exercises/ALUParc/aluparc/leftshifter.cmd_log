@@ -1,0 +1,57 @@
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 leftshifter.ngc leftshifter.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o leftshifter_map.ncd leftshifter.ngd leftshifter.pcf
+par -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -w -intstyle ise -ol std -t 1 leftshifter_map.ncd leftshifter.ncd leftshifter.pcf
+trce -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -e 3 -l 3 -s 4 -xml leftshifter leftshifter.ncd -o leftshifter.twr leftshifter.pcf
+netgen -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -s 4 -pcf leftshifter.pcf -sdf_anno true -sdf_path netgen/par -w -dir netgen/par -ofmt verilog -sim leftshifter.ncd leftshifter_timesim.v
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 leftshifter.ngc leftshifter.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o leftshifter_map.ncd leftshifter.ngd leftshifter.pcf
+par -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -w -intstyle ise -ol std -t 1 leftshifter_map.ncd leftshifter.ncd leftshifter.pcf
+trce -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -e 3 -l 3 -s 4 -xml leftshifter leftshifter.ncd -o leftshifter.twr leftshifter.pcf
+netgen -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -s 4 -pcf leftshifter.pcf -sdf_anno true -sdf_path netgen/par -w -dir netgen/par -ofmt verilog -sim leftshifter.ncd leftshifter_timesim.v
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 leftshifter.ngc leftshifter.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o leftshifter_map.ncd leftshifter.ngd leftshifter.pcf
+par -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -w -intstyle ise -ol std -t 1 leftshifter_map.ncd leftshifter.ncd leftshifter.pcf
+trce -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -e 3 -l 3 -s 4 -xml leftshifter leftshifter.ncd -o leftshifter.twr leftshifter.pcf
+netgen -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -s 4 -pcf leftshifter.pcf -sdf_anno true -sdf_path netgen/par -w -dir netgen/par -ofmt verilog -sim leftshifter.ncd leftshifter_timesim.v
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 leftshifter.ngc leftshifter.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o leftshifter_map.ncd leftshifter.ngd leftshifter.pcf
+par -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -w -intstyle ise -ol std -t 1 leftshifter_map.ncd leftshifter.ncd leftshifter.pcf
+trce -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -e 3 -l 3 -s 4 -xml leftshifter leftshifter.ncd -o leftshifter.twr leftshifter.pcf
+netgen -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -s 4 -pcf leftshifter.pcf -sdf_anno true -sdf_path netgen/par -w -dir netgen/par -ofmt verilog -sim leftshifter.ncd leftshifter_timesim.v
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 leftshifter.ngc leftshifter.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o leftshifter_map.ncd leftshifter.ngd leftshifter.pcf
+par -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -w -intstyle ise -ol std -t 1 leftshifter_map.ncd leftshifter.ncd leftshifter.pcf
+trce -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -e 3 -l 3 -s 4 -xml leftshifter leftshifter.ncd -o leftshifter.twr leftshifter.pcf
+netgen -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -s 4 -pcf leftshifter.pcf -sdf_anno true -sdf_path netgen/par -w -dir netgen/par -ofmt verilog -sim leftshifter.ncd leftshifter_timesim.v
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 leftshifter.ngc leftshifter.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o leftshifter_map.ncd leftshifter.ngd leftshifter.pcf
+par -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -w -intstyle ise -ol std -t 1 leftshifter_map.ncd leftshifter.ncd leftshifter.pcf
+trce -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -e 3 -l 3 -s 4 -xml leftshifter leftshifter.ncd -o leftshifter.twr leftshifter.pcf
+netgen -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -s 4 -pcf leftshifter.pcf -sdf_anno true -sdf_path netgen/par -w -dir netgen/par -ofmt verilog -sim leftshifter.ncd leftshifter_timesim.v
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 leftshifter.ngc leftshifter.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o leftshifter_map.ncd leftshifter.ngd leftshifter.pcf
+par -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -w -intstyle ise -ol std -t 1 leftshifter_map.ncd leftshifter.ncd leftshifter.pcf
+trce -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -e 3 -l 3 -s 4 -xml leftshifter leftshifter.ncd -o leftshifter.twr leftshifter.pcf
+netgen -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -s 4 -pcf leftshifter.pcf -sdf_anno true -sdf_path netgen/par -w -dir netgen/par -ofmt verilog -sim leftshifter.ncd leftshifter_timesim.v
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn leftshifter.xst -ofn leftshifter.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 leftshifter.ngc leftshifter.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o leftshifter_map.ncd leftshifter.ngd leftshifter.pcf
+par -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -w -intstyle ise -ol std -t 1 leftshifter_map.ncd leftshifter.ncd leftshifter.pcf
+trce -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -e 3 -l 3 -s 4 -xml leftshifter leftshifter.ncd -o leftshifter.twr leftshifter.pcf
+netgen -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -s 4 -pcf leftshifter.pcf -sdf_anno true -sdf_path netgen/par -w -dir netgen/par -ofmt verilog -sim leftshifter.ncd leftshifter_timesim.v

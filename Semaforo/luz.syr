@@ -1,0 +1,474 @@
+Release 9.1i - xst J.30
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.51 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.51 s | Elapsed : 0.00 / 1.00 s
+ 
+--> Reading design: luz.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "luz.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "luz"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : luz
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : luz.lso
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/luz is now defined in a different file.  It was defined in "C:/Xilinx91i/Semaforo/semaforo_vhdl.vhd", and is now defined in "C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd".
+WARNING:HDLParsers:3607 - Unit work/luz/semaforo is now defined in a different file.  It was defined in "C:/Xilinx91i/Semaforo/semaforo_vhdl.vhd", and is now defined in "C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd".
+Compiling vhdl file "C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd" in Library work.
+Architecture semaforo of Entity luz is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <luz> in library <work> (architecture <semaforo>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <luz> in library <work> (Architecture <semaforo>).
+WARNING:Xst:819 - "C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd" line 52: The following signals are missing in the process sensitivity list:
+   color, salida.
+Entity <luz> analyzed. Unit <luz> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <luz>.
+    Related source file is "C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd".
+    Found finite state machine <FSM_0> for signal <color>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 4                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Clock enable       | salida$cmp_lt0000 (positive)                   |
+    | Reset              | color$and0000 (positive)                       |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | camarillo2                                     |
+    | Power Up State     | crojoamarillo                                  |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+WARNING:Xst - Property "use_dsp48" is not applicable for this technology.
+    Found 32-bit up counter for signal <cuenta>.
+    Found 32-bit adder for signal <cuenta$add0000> created at line 88.
+    Found 3-bit register for signal <salida>.
+    Found 32-bit comparator less for signal <salida$cmp_lt0000> created at line 56.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <luz> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1
+ 3-bit register                                        : 1
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <color> on signal <color[1:3]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ crojo         | 011
+ crojoamarillo | 000
+ camarillo1    | 010
+ cverde        | 110
+ camarillo2    | 001
+---------------------------
+Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx91i.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+# Comparators                                          : 1
+ 32-bit comparator less                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <luz> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block luz, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 38
+ Flip-Flops                                            : 38
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : luz.ngr
+Top Level Output File Name         : luz
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 312
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 62
+#      LUT2                        : 2
+#      LUT3                        : 69
+#      LUT4                        : 38
+#      MUXCY                       : 71
+#      VCC                         : 1
+#      XORCY                       : 62
+# FlipFlops/Latches                : 38
+#      FDCE                        : 3
+#      FDCPE                       : 32
+#      FDPE                        : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 1
+#      OBUF                        : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      95  out of   1920     4%  
+ Number of Slice Flip Flops:            38  out of   3840     0%  
+ Number of 4 input LUTs:               177  out of   3840     4%  
+ Number of IOs:                          5
+ Number of bonded IOBs:                  5  out of    173     2%  
+ Number of GCLKs:                        1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 38    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------+------------------------+-------+
+Control Signal                           | Buffer(FF name)        | Load  |
+-----------------------------------------+------------------------+-------+
+cuenta_7__and0000(cuenta_7__and00001:O)  | NONE(cuenta_7)         | 1     |
+cuenta_7__and0001(cuenta_7__and00011:O)  | NONE(cuenta_7)         | 1     |
+cuenta_27__and0000(cuenta_27__and00001:O)| NONE(cuenta_27)        | 1     |
+cuenta_27__and0001(cuenta_27__and00011:O)| NONE(cuenta_27)        | 1     |
+cuenta_5__and0000(cuenta_5__and00001:O)  | NONE(cuenta_5)         | 1     |
+cuenta_5__and0001(cuenta_5__and00011:O)  | NONE(cuenta_5)         | 1     |
+cuenta_15__and0000(cuenta_15__and00001:O)| NONE(cuenta_15)        | 1     |
+cuenta_15__and0001(cuenta_15__and00011:O)| NONE(cuenta_15)        | 1     |
+cuenta_9__and0000(cuenta_9__and00001:O)  | NONE(cuenta_9)         | 1     |
+cuenta_9__and0001(cuenta_9__and00011:O)  | NONE(cuenta_9)         | 1     |
+cuenta_19__and0000(cuenta_19__and00001:O)| NONE(cuenta_19)        | 1     |
+cuenta_19__and0001(cuenta_19__and00011:O)| NONE(cuenta_19)        | 1     |
+cuenta_28__and0000(cuenta_28__and00001:O)| NONE(cuenta_28)        | 1     |
+cuenta_28__and0001(cuenta_28__and00011:O)| NONE(cuenta_28)        | 1     |
+color_and0000(color_and00001:O)          | NONE(color_FFd2)       | 6     |
+cuenta_13__and0000(cuenta_13__and00001:O)| NONE(cuenta_13)        | 1     |
+cuenta_13__and0001(cuenta_13__and00011:O)| NONE(cuenta_13)        | 1     |
+cuenta_2__and0000(cuenta_2__and00001:O)  | NONE(cuenta_2)         | 1     |
+cuenta_2__and0001(cuenta_2__and00011:O)  | NONE(cuenta_2)         | 1     |
+cuenta_10__and0000(cuenta_10__and00001:O)| NONE(cuenta_10)        | 1     |
+cuenta_10__and0001(cuenta_10__and00011:O)| NONE(cuenta_10)        | 1     |
+cuenta_18__and0000(cuenta_18__and00001:O)| NONE(cuenta_18)        | 1     |
+cuenta_18__and0001(cuenta_18__and00011:O)| NONE(cuenta_18)        | 1     |
+cuenta_29__and0000(cuenta_29__and00001:O)| NONE(cuenta_29)        | 1     |
+cuenta_29__and0001(cuenta_29__and00011:O)| NONE(cuenta_29)        | 1     |
+cuenta_0__and0000(cuenta_0__and00001:O)  | NONE(cuenta_0)         | 1     |
+cuenta_0__and0001(cuenta_0__and00011:O)  | NONE(cuenta_0)         | 1     |
+cuenta_12__and0000(cuenta_12__and00001:O)| NONE(cuenta_12)        | 1     |
+cuenta_12__and0001(cuenta_12__and00011:O)| NONE(cuenta_12)        | 1     |
+cuenta_16__and0000(cuenta_16__and00001:O)| NONE(cuenta_16)        | 1     |
+cuenta_16__and0001(cuenta_16__and00011:O)| NONE(cuenta_16)        | 1     |
+cuenta_8__and0000(cuenta_8__and00001:O)  | NONE(cuenta_8)         | 1     |
+cuenta_8__and0001(cuenta_8__and00011:O)  | NONE(cuenta_8)         | 1     |
+cuenta_22__and0000(cuenta_22__and00001:O)| NONE(cuenta_22)        | 1     |
+cuenta_22__and0001(cuenta_22__and00011:O)| NONE(cuenta_22)        | 1     |
+cuenta_11__and0000(cuenta_11__and00001:O)| NONE(cuenta_11)        | 1     |
+cuenta_11__and0001(cuenta_11__and00011:O)| NONE(cuenta_11)        | 1     |
+cuenta_1__and0000(cuenta_1__and00001:O)  | NONE(cuenta_1)         | 1     |
+cuenta_1__and0001(cuenta_1__and00011:O)  | NONE(cuenta_1)         | 1     |
+cuenta_21__and0000(cuenta_21__and00001:O)| NONE(cuenta_21)        | 1     |
+cuenta_21__and0001(cuenta_21__and00011:O)| NONE(cuenta_21)        | 1     |
+cuenta_23__and0000(cuenta_23__and00001:O)| NONE(cuenta_23)        | 1     |
+cuenta_23__and0001(cuenta_23__and00011:O)| NONE(cuenta_23)        | 1     |
+cuenta_6__and0000(cuenta_6__and00001:O)  | NONE(cuenta_6)         | 1     |
+cuenta_6__and0001(cuenta_6__and00011:O)  | NONE(cuenta_6)         | 1     |
+cuenta_17__and0000(cuenta_17__and00001:O)| NONE(cuenta_17)        | 1     |
+cuenta_17__and0001(cuenta_17__and00011:O)| NONE(cuenta_17)        | 1     |
+cuenta_24__and0000(cuenta_24__and00001:O)| NONE(cuenta_24)        | 1     |
+cuenta_24__and0001(cuenta_24__and00011:O)| NONE(cuenta_24)        | 1     |
+cuenta_20__and0000(cuenta_20__and00001:O)| NONE(cuenta_20)        | 1     |
+cuenta_20__and0001(cuenta_20__and00011:O)| NONE(cuenta_20)        | 1     |
+cuenta_30__and0000(cuenta_30__and00001:O)| NONE(cuenta_30)        | 1     |
+cuenta_30__and0001(cuenta_30__and00011:O)| NONE(cuenta_30)        | 1     |
+cuenta_14__and0000(cuenta_14__and00001:O)| NONE(cuenta_14)        | 1     |
+cuenta_14__and0001(cuenta_14__and00011:O)| NONE(cuenta_14)        | 1     |
+cuenta_25__and0000(cuenta_25__and00001:O)| NONE(cuenta_25)        | 1     |
+cuenta_25__and0001(cuenta_25__and00011:O)| NONE(cuenta_25)        | 1     |
+cuenta_3__and0000(cuenta_3__and00001:O)  | NONE(cuenta_3)         | 1     |
+cuenta_3__and0001(cuenta_3__and00011:O)  | NONE(cuenta_3)         | 1     |
+cuenta_26__and0000(cuenta_26__and00001:O)| NONE(cuenta_26)        | 1     |
+cuenta_26__and0001(cuenta_26__and00011:O)| NONE(cuenta_26)        | 1     |
+cuenta_4__and0000(cuenta_4__and00001:O)  | NONE(cuenta_4)         | 1     |
+cuenta_4__and0001(cuenta_4__and00011:O)  | NONE(cuenta_4)         | 1     |
+cuenta_31__and0000(cuenta_31__and00001:O)| NONE(cuenta_31)        | 1     |
+cuenta_31__and0001(cuenta_31__and00011:O)| NONE(cuenta_31)        | 1     |
+-----------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.651ns (Maximum Frequency: 130.700MHz)
+   Minimum input arrival time before clock: 4.134ns
+   Maximum output required time after clock: 7.165ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 7.651ns (frequency: 130.700MHz)
+  Total number of paths / destination ports: 2280 / 76
+-------------------------------------------------------------------------
+Delay:               7.651ns (Levels of Logic = 11)
+  Source:            cuenta_1 (FF)
+  Destination:       cuenta_31 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: cuenta_1 to cuenta_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:C->Q            3   0.720   1.246  cuenta_1 (cuenta_1)
+     LUT4:I0->O            1   0.551   0.000  Mcompar_salida_cmp_lt0000_lut<0> (N5)
+     MUXCY:S->O            1   0.500   0.000  Mcompar_salida_cmp_lt0000_cy<0> (Mcompar_salida_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_salida_cmp_lt0000_cy<1> (Mcompar_salida_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_salida_cmp_lt0000_cy<2> (Mcompar_salida_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_salida_cmp_lt0000_cy<3> (Mcompar_salida_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_salida_cmp_lt0000_cy<4> (Mcompar_salida_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_salida_cmp_lt0000_cy<5> (Mcompar_salida_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_salida_cmp_lt0000_cy<6> (Mcompar_salida_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Mcompar_salida_cmp_lt0000_cy<7> (Mcompar_salida_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           2   0.303   0.877  Mcompar_salida_cmp_lt0000_cy<8> (Mcompar_salida_cmp_lt0000_cy<8>)
+     INV:I->O             32   0.551   1.853  Mcompar_salida_cmp_lt0000_cy<8>_inv_INV_0 (salida_cmp_lt0000)
+     FDCPE:CE                  0.602          cuenta_31
+    ----------------------------------------
+    Total                      7.651ns (3.675ns logic, 3.976ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 31 / 31
+-------------------------------------------------------------------------
+Offset:              4.134ns (Levels of Logic = 2)
+  Source:            carro (PAD)
+  Destination:       cuenta_31 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: carro to cuenta_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            96   0.821   2.559  carro_IBUF (carro_IBUF)
+     LUT4:I0->O            1   0.551   0.000  cuenta_Q_mux0000<31>1 (cuenta_Q_mux0000<31>)
+     FDCPE:D                   0.203          cuenta_31
+    ----------------------------------------
+    Total                      4.134ns (1.575ns logic, 2.559ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              7.165ns (Levels of Logic = 1)
+  Source:            salida_2 (FF)
+  Destination:       estsig<2> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: salida_2 to estsig<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.720   0.801  salida_2 (salida_2)
+     OBUF:I->O                 5.644          estsig_2_OBUF (estsig<2>)
+    ----------------------------------------
+    Total                      7.165ns (6.364ns logic, 0.801ns route)
+                                       (88.8% logic, 11.2% route)
+
+=========================================================================
+CPU : 7.66 / 8.28 s | Elapsed : 7.00 / 8.00 s
+ 
+--> 
+
+Total memory usage is 153936 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

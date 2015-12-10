@@ -1,0 +1,197 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 8.1i
+--  \   \         Application : ISE
+--  /   /         Filename : alusim.ant
+-- /___/   /\     Timestamp : Sun Apr 15 20:29:23 2007
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: alusim
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY alusim IS
+END alusim;
+
+ARCHITECTURE testbench_arch OF alusim IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "D:\Documentos\XILINXPROYECTOS\aluparc\alusim.ano";
+
+    COMPONENT ALU
+        PORT (
+            datoa : In std_logic_vector (3 DownTo 0);
+            datob : In std_logic_vector (3 DownTo 0);
+            selecs : In std_logic_vector (2 DownTo 0);
+            CLK : In std_logic;
+            res : Out std_logic_vector (3 DownTo 0);
+            resm : Out std_logic_vector (7 DownTo 0)
+        );
+    END COMPONENT;
+
+    SIGNAL datoa : std_logic_vector (3 DownTo 0) := "0011";
+    SIGNAL datob : std_logic_vector (3 DownTo 0) := "0010";
+    SIGNAL selecs : std_logic_vector (2 DownTo 0) := "000";
+    SIGNAL CLK : std_logic := '0';
+    SIGNAL res : std_logic_vector (3 DownTo 0) := "0000";
+    SIGNAL resm : std_logic_vector (7 DownTo 0) := "00000000";
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : ALU
+        PORT MAP (
+            datoa => datoa,
+            datob => datob,
+            selecs => selecs,
+            CLK => CLK,
+            res => res,
+            resm => resm
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_res(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", res, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, res);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_resm(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", resm, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, resm);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_res(0);
+            ANNOTATE_resm(0);
+            ANNO_LOOP : LOOP
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+                ANNOTATE_res(TX_TIME);
+                ANNOTATE_resm(TX_TIME);
+                WAIT for 50 ns;
+                TX_TIME := TX_TIME + 50;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  600ns
+                WAIT FOR 600 ns;
+                selecs <= "001";
+                -- -------------------------------------
+                -- -------------  Current Time:  1200ns
+                WAIT FOR 600 ns;
+                selecs <= "010";
+                -- -------------------------------------
+                -- -------------  Current Time:  1800ns
+                WAIT FOR 600 ns;
+                CLK <= '1';
+                selecs <= "011";
+                -- -------------------------------------
+                -- -------------  Current Time:  1900ns
+                WAIT FOR 100 ns;
+                CLK <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  2000ns
+                WAIT FOR 100 ns;
+                CLK <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  2100ns
+                WAIT FOR 100 ns;
+                CLK <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  2200ns
+                WAIT FOR 100 ns;
+                CLK <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  2300ns
+                WAIT FOR 100 ns;
+                CLK <= '0';
+                selecs <= "100";
+                -- -------------------------------------
+                -- -------------  Current Time:  2400ns
+                WAIT FOR 100 ns;
+                CLK <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  2500ns
+                WAIT FOR 100 ns;
+                CLK <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  2600ns
+                WAIT FOR 100 ns;
+                CLK <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  2700ns
+                WAIT FOR 100 ns;
+                CLK <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  2800ns
+                WAIT FOR 100 ns;
+                CLK <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  2900ns
+                WAIT FOR 100 ns;
+                CLK <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  3000ns
+                WAIT FOR 100 ns;
+                CLK <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  3100ns
+                WAIT FOR 100 ns;
+                CLK <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  3200ns
+                WAIT FOR 100 ns;
+                CLK <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  3300ns
+                WAIT FOR 100 ns;
+                CLK <= '0';
+                WAIT FOR 700 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

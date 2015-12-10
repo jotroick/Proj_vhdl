@@ -1,0 +1,7 @@
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn rightshifter.xst -ofn rightshifter.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn rightshifter.xst -ofn rightshifter.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 rightshifter.ngc rightshifter.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o rightshifter_map.ncd rightshifter.ngd rightshifter.pcf
+par -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -w -intstyle ise -ol std -t 1 rightshifter_map.ncd rightshifter.ncd rightshifter.pcf
+trce -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -e 3 -l 3 -s 4 -xml rightshifter rightshifter.ncd -o rightshifter.twr rightshifter.pcf
+netgen -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -s 4 -pcf rightshifter.pcf -sdf_anno true -sdf_path netgen/par -w -dir netgen/par -ofmt verilog -sim rightshifter.ncd rightshifter_timesim.v

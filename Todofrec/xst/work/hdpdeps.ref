@@ -1,0 +1,8 @@
+V3 11
+FL C:/projectxilinx/Todofrec/freqm1.vhd 2007/12/06.10:34:49 J.36
+EN work/freqm1 1196955295 FL C:/projectxilinx/Todofrec/freqm1.vhd \
+      PB ieee/std_logic_1164 1177545575 PH ieee/NUMERIC_STD 1177545583 LB UNISIM \
+      PH unisim/VCOMPONENTS 1177545586
+AR work/freqm1/BEHAVIORAL 1196955296 \
+      FL C:/projectxilinx/Todofrec/freqm1.vhd EN work/freqm1 1196955295 CP hex2led \
+      CP cnt_bcd CP control CP mux16_4 CP divisorfrec CP cont CP m2_4

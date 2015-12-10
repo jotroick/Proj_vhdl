@@ -1,0 +1,24 @@
+EN demux NULL D:/Documentos/XILINXPROYECTOS/aluparc/demux.vhd sub00/vhpl08 1176660314
+EN restador NULL D:/Documentos/XILINXPROYECTOS/aluparc/restador.vhd sub00/vhpl10 1176686633
+EN mux5 NULL D:/Documentos/XILINXPROYECTOS/aluparc/mux5.vhd sub00/vhpl20 1176686641
+AR restin behavioral D:/Documentos/XILINXPROYECTOS/aluparc/restin.vhd sub00/vhpl07 1176686628
+AR restador behavioral D:/Documentos/XILINXPROYECTOS/aluparc/restador.vhd sub00/vhpl11 1176686634
+EN multicom NULL D:/Documentos/XILINXPROYECTOS/aluparc/multicom.vhd sub00/vhpl00 1176686635
+AR alu behavioral D:/Documentos/XILINXPROYECTOS/aluparc/alu.vhd sub00/vhpl15 1176686846
+AR desplazamiento behavioral "C:/Documents and Settings/Administrador/Mis documentos/Mis archivos recibidos/transmisoor/desplazamiento.vhd" sub00/vhpl23 1176685690
+AR rightshifter despright D:/Documentos/XILINXPROYECTOS/aluparc/rightshifter.vhd sub00/vhpl19 1176686640
+EN fulladder NULL D:/Documentos/XILINXPROYECTOS/aluparc/fulladder.vhd sub00/vhpl04 1176686631
+EN rightshifter NULL D:/Documentos/XILINXPROYECTOS/aluparc/rightshifter.vhd sub00/vhpl18 1176686639
+AR mux5 escoge D:/Documentos/XILINXPROYECTOS/aluparc/mux5.vhd sub00/vhpl21 1176686642
+AR multicom combmult D:/Documentos/XILINXPROYECTOS/aluparc/multicom.vhd sub00/vhpl01 1176686636
+AR shiftregister desplaza D:/Documentos/XILINXPROYECTOS/aluparc/shiftregister.vhd sub00/vhpl13 1176660323
+EN leftshifter NULL D:/Documentos/XILINXPROYECTOS/aluparc/leftshifter.vhd sub00/vhpl16 1176686637
+EN desplazamiento NULL "C:/Documents and Settings/Administrador/Mis documentos/Mis archivos recibidos/transmisoor/desplazamiento.vhd" sub00/vhpl22 1176685689
+EN fulladd NULL D:/Documentos/XILINXPROYECTOS/aluparc/fulladd.vhd sub00/vhpl02 1176686629
+AR fulladd behavioral D:/Documentos/XILINXPROYECTOS/aluparc/fulladd.vhd sub00/vhpl03 1176686630
+AR fulladder behavior D:/Documentos/XILINXPROYECTOS/aluparc/fulladder.vhd sub00/vhpl05 1176686632
+EN restin NULL D:/Documentos/XILINXPROYECTOS/aluparc/restin.vhd sub00/vhpl06 1176686627
+AR demux behavioral D:/Documentos/XILINXPROYECTOS/aluparc/demux.vhd sub00/vhpl09 1176660315
+EN shiftregister NULL D:/Documentos/XILINXPROYECTOS/aluparc/shiftregister.vhd sub00/vhpl12 1176660322
+AR leftshifter despleft D:/Documentos/XILINXPROYECTOS/aluparc/leftshifter.vhd sub00/vhpl17 1176686638
+EN alu NULL D:/Documentos/XILINXPROYECTOS/aluparc/alu.vhd sub00/vhpl14 1176686845

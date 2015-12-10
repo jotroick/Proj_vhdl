@@ -1,0 +1,6 @@
+xst -ise "C:/Xilinx92i/carro2/carro2.ise" -intstyle ise -ifn car.xst -ofn car.syr
+xst -ise "C:/Xilinx92i/carro2/carro2.ise" -intstyle ise -ifn car.xst -ofn car.syr
+xst -ise "C:/Xilinx92i/carro2/carro2.ise" -intstyle ise -ifn car.xst -ofn car.syr
+xst -ise "C:/Xilinx92i/carro2/carro2.ise" -intstyle ise -ifn car.xst -ofn car.syr
+xst -ise "C:/Xilinx92i/carro2/carro2.ise" -intstyle ise -ifn car.xst -ofn car.syr
+xst -ise "C:/Xilinx92i/carro2/carro2.ise" -intstyle ise -ifn car.xst -ofn car.syr

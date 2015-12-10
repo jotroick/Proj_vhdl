@@ -1,0 +1,345 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+C1/cable(2) <= ((N_PZ_90 AND N_PZ_50)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(2) AND datoa(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_50 AND N_PZ_51)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND datoa(0) AND N_PZ_90 AND N_PZ_76)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND datoa(0) AND datoa(2) AND N_PZ_76));
+</td></tr><tr><td>
+</td></tr><tr><td>
+C3/Mxor_p(3)__n0001 <= (datoa(0) AND datob(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((datoa(0) AND N_PZ_90 AND N_PZ_50)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND datoa(0) AND N_PZ_90 AND datoa(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND datoa(0) AND NOT datoa(2) AND N_PZ_50 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND NOT datoa(2) AND NOT N_PZ_78 AND N_PZ_50 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datob(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+C3/_n0009 <= ((NOT datob(0) AND datoa(0) AND N_PZ_51 AND datob(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT C3/Mxor_p(3)__n0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND NOT datob(2) AND N_PZ_50 AND N_PZ_51 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	C3/Mxor_p(3)__n0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_90 AND N_PZ_76 AND N_PZ_51 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	C3/Mxor_p(3)__n0001 AND NOT N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND datoa(0) AND N_PZ_90 AND N_PZ_51 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(3) AND NOT N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND datob(2) AND datoa(1) AND NOT datoa(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(3) AND NOT N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND NOT datob(2) AND datoa(1) AND NOT N_PZ_51 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(3) AND NOT C3/Mxor_p(3)__n0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND NOT datob(2) AND datoa(1) AND NOT N_PZ_51 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(3) AND N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND NOT datoa(1) AND datoa(2) AND NOT N_PZ_76 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(3) AND NOT C3/Mxor_p(3)__n0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND datoa(2) AND NOT N_PZ_51 AND datob(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT C3/Mxor_p(3)__n0001 AND N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_90 AND NOT datoa(1) AND datoa(2) AND NOT N_PZ_76 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	C3/Mxor_p(3)__n0001 AND N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(2) AND N_PZ_76 AND NOT N_PZ_51 AND NOT datob(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	C3/Mxor_p(3)__n0001 AND NOT N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND NOT datob(2) AND N_PZ_78 AND N_PZ_51 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(3) AND NOT C3/Mxor_p(3)__n0001 AND N_PZ_48));
+</td></tr><tr><td>
+</td></tr><tr><td>
+C6/Mmux__n0009_I1_Result2 <= ((NOT datob(0) AND NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_50 AND N_PZ_109)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datoa(0) AND NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_50 AND N_PZ_109)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND N_PZ_90 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_50 AND N_PZ_51)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND NOT datob(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datoa(2) AND N_PZ_50)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND N_PZ_90 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datoa(1) AND NOT datoa(2) AND NOT N_PZ_76)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND NOT datob(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(2) AND NOT N_PZ_76 AND NOT N_PZ_51)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND datoa(0) AND NOT selecs(1) AND NOT selecs(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT selecs(0) AND N_PZ_90 AND datoa(2) AND N_PZ_76)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND datoa(0) AND NOT selecs(1) AND NOT selecs(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT selecs(0) AND NOT N_PZ_90 AND NOT datoa(2) AND N_PZ_76));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_109 <= ((datob(2) AND NOT datoa(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(2) AND datoa(2)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_134 <= ((NOT datob(2) AND datoa(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_78 AND NOT N_PZ_109));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_161 <= ((NOT selecs(1) AND NOT selecs(2) AND selecs(0) AND N_PZ_78 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_109)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND NOT selecs(2) AND selecs(0) AND NOT N_PZ_78 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_109));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_48 <= (datob(0) AND datoa(3));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_50 <= (datob(1) AND datoa(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_51 <= (datob(1) AND datoa(2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_68 <= ((selecs(1) AND selecs(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(2) AND selecs(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_76 <= ((datob(1) AND NOT datoa(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(1) AND datoa(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_78 <= ((NOT datoa(1) AND N_PZ_76)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND NOT datoa(0) AND NOT N_PZ_76));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_90 <= ((datob(0) AND datob(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(2) AND datob(1)));
+</td></tr><tr><td>
+FDCPE_cableshif0: FDCPE port map (cableshif(0),datoa(3),CLK,'0','0',N_PZ_90);
+</td></tr><tr><td>
+FDCPE_cableshif1: FDCPE port map (cableshif(1),datoa(0),CLK,'0','0',N_PZ_90);
+</td></tr><tr><td>
+FDCPE_cableshif2: FDCPE port map (cableshif(2),datoa(1),CLK,'0','0',N_PZ_90);
+</td></tr><tr><td>
+FDCPE_cableshif3: FDCPE port map (cableshif(3),datoa(2),CLK,'0','0',N_PZ_90);
+</td></tr><tr><td>
+FDCPE_cableshifr0: FDCPE port map (cableshifr(0),datoa(1),CLK,'0','0',N_PZ_90);
+</td></tr><tr><td>
+FDCPE_cableshifr1: FDCPE port map (cableshifr(1),datoa(2),CLK,'0','0',N_PZ_90);
+</td></tr><tr><td>
+FDCPE_cableshifr2: FDCPE port map (cableshifr(2),datoa(3),CLK,'0','0',N_PZ_90);
+</td></tr><tr><td>
+FDCPE_cableshifr3: FDCPE port map (cableshifr(3),datoa(0),CLK,'0','0',N_PZ_90);
+</td></tr><tr><td>
+LDCP_res0: LDCP port map (res(0),res_D(0),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res_D(0) <= ((datob(0) AND NOT datoa(0) AND NOT selecs(1) AND NOT selecs(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND datoa(0) AND NOT selecs(1) AND NOT selecs(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(2) AND selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cableshif(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cableshifr(0)));
+</td></tr><tr><td>
+LDCP_res1: LDCP port map (res(1),res_D(1),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res_D(1) <= ((NOT datob(0) AND NOT selecs(1) AND NOT selecs(2) AND N_PZ_76)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(2) AND selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cableshif(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cableshifr(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND NOT selecs(1) AND NOT selecs(2) AND selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_76)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datoa(0) AND NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_76)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND NOT selecs(2) AND selecs(0) AND NOT N_PZ_76 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_78)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_76 AND NOT N_PZ_78));
+</td></tr><tr><td>
+LDCP_res2: LDCP port map (res(2),res_D(2),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res_D(2) <= NOT ((NOT C6/Mmux__n0009_I1_Result2 AND NOT N_PZ_161)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT selecs(1) AND selecs(2) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT C6/Mmux__n0009_I1_Result2 AND NOT N_PZ_161 AND cableshifr(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(2) AND selecs(0) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT C6/Mmux__n0009_I1_Result2 AND NOT N_PZ_161 AND cableshifr(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(2) AND selecs(0) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT C6/Mmux__n0009_I1_Result2 AND NOT N_PZ_161 AND cableshif(2))));
+</td></tr><tr><td>
+LDCP_res3: LDCP port map (res(3),res_D(3),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;res_D(3) <= (NOT selecs(1) AND datob(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((selecs(1) AND NOT selecs(2) AND selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cableshif(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND selecs(0) AND N_PZ_68 AND datob(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND selecs(2) AND NOT selecs(0) AND datob(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cableshifr(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND selecs(2) AND NOT selecs(0) AND NOT datob(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	cableshifr(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND datoa(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT C1/cable(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND NOT datoa(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	C1/cable(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND selecs(0) AND NOT N_PZ_68 AND datoa(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_134)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT selecs(1) AND selecs(0) AND NOT N_PZ_68 AND NOT datoa(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_134));
+</td></tr><tr><td>
+LDCP_resm0: LDCP port map (resm(0),resm_D(0),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resm_D(0) <= (datob(0) AND datoa(0) AND selecs(1) AND NOT selecs(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT selecs(0));
+</td></tr><tr><td>
+LDCP_resm1: LDCP port map (resm(1),resm_D(1),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resm_D(1) <= ((datob(0) AND NOT datoa(0) AND selecs(1) AND NOT selecs(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT selecs(0) AND datoa(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datob(1) AND datoa(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND datoa(0) AND selecs(1) AND NOT selecs(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT selecs(0) AND datob(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(1) AND NOT datoa(1)));
+</td></tr><tr><td>
+LDCP_resm2: LDCP port map (resm(2),resm_D(2),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resm_D(2) <= ((datob(0) AND datoa(0) AND selecs(1) AND NOT selecs(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT selecs(0) AND N_PZ_109)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND NOT datoa(0) AND selecs(1) AND NOT selecs(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT selecs(0) AND N_PZ_50)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datob(2) AND N_PZ_50)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datoa(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datoa(2) AND N_PZ_50)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND NOT datoa(0) AND selecs(1) AND NOT selecs(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT selecs(0) AND datoa(2) AND NOT N_PZ_50)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND datoa(0) AND selecs(1) AND NOT selecs(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT selecs(0) AND datob(2) AND NOT N_PZ_50));
+</td></tr><tr><td>
+LDCP_resm3: LDCP port map (resm(3),resm_D(3),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resm_D(3) <= ((NOT datob(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datob(2) AND N_PZ_51 AND NOT C3/Mxor_p(3)__n0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datob(2) AND NOT N_PZ_51 AND C3/Mxor_p(3)__n0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND datob(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(1) AND C3/Mxor_p(3)__n0001 AND N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND NOT datob(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(1) AND NOT C3/Mxor_p(3)__n0001 AND N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND NOT datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_51 AND C3/Mxor_p(3)__n0001 AND N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND NOT datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_51 AND NOT C3/Mxor_p(3)__n0001 AND NOT N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND NOT datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_51 AND C3/Mxor_p(3)__n0001 AND NOT N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND NOT datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_51 AND NOT C3/Mxor_p(3)__n0001 AND N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(2) AND datoa(1) AND NOT datoa(3) AND NOT C3/Mxor_p(3)__n0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datob(2) AND datoa(1) AND NOT datoa(3) AND C3/Mxor_p(3)__n0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(2) AND datoa(1) AND NOT N_PZ_51 AND NOT C3/Mxor_p(3)__n0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(2) AND datoa(2) AND N_PZ_50 AND C3/Mxor_p(3)__n0001));
+</td></tr><tr><td>
+LDCP_resm4: LDCP port map (resm(4),resm_D(4),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resm_D(4) <= ((NOT datob(0) AND selecs(1) AND NOT selecs(0) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_50 AND datob(3) AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND selecs(1) AND NOT selecs(0) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(3) AND NOT C3/Mxor_p(3)__n0001 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND selecs(1) AND NOT selecs(0) AND NOT N_PZ_90 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND C3/Mxor_p(3)__n0001 AND N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_51 AND datob(3) AND NOT N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND datob(2) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(2) AND NOT N_PZ_76 AND NOT N_PZ_51 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT datob(2) AND datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND NOT N_PZ_51 AND datob(3) AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT datob(2) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_76 AND N_PZ_51 AND N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND datoa(1) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datoa(2) AND datob(3) AND NOT N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT N_PZ_68 AND N_PZ_50 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_51 AND NOT datob(3) AND N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND selecs(1) AND NOT selecs(0) AND NOT N_PZ_90 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND N_PZ_50 AND N_PZ_51 AND NOT datob(3) AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND datoa(0) AND selecs(1) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_90 AND NOT N_PZ_68 AND N_PZ_51 AND C3/Mxor_p(3)__n0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND selecs(1) AND NOT selecs(0) AND NOT N_PZ_90 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND N_PZ_78 AND N_PZ_51 AND C3/Mxor_p(3)__n0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND selecs(1) AND NOT selecs(0) AND NOT datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND NOT N_PZ_51 AND C3/Mxor_p(3)__n0001 AND N_PZ_48 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND NOT datoa(2) AND NOT datob(3) AND N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND datob(2) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(2) AND N_PZ_76 AND NOT datob(3) AND NOT N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT N_PZ_68 AND datoa(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_78 AND NOT N_PZ_51 AND datob(3) AND N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND datoa(0) AND selecs(1) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_90 AND datoa(1) AND NOT N_PZ_68 AND C3/Mxor_p(3)__n0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datoa(0) AND selecs(1) AND NOT selecs(0) AND datob(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(1) AND NOT N_PZ_68 AND NOT N_PZ_51 AND C3/Mxor_p(3)__n0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_48 AND NOT C3/_n0009));
+</td></tr><tr><td>
+LDCP_resm5: LDCP port map (resm(5),resm_D(5),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resm_D(5) <= ((selecs(1) AND NOT selecs(0) AND NOT N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datoa(2) AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datob(3) AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT datoa(1) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datoa(2) AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT N_PZ_68 AND NOT datoa(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datob(3) AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND selecs(1) AND NOT selecs(0) AND NOT N_PZ_90 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND N_PZ_50 AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT datob(1) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_76 AND NOT datob(3) AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT N_PZ_68 AND NOT N_PZ_50 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT datob(3) AND NOT N_PZ_48 AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT datob(0) AND selecs(1) AND NOT selecs(0) AND NOT datob(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND N_PZ_51 AND datob(3) AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_50 AND N_PZ_51 AND NOT datob(3) AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_51 AND NOT datob(3) AND N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND datob(2) AND datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND datob(3) AND NOT N_PZ_48 AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT datob(2) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(2) AND NOT N_PZ_50 AND datob(3) AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT datoa(1) AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(2) AND datob(3) AND NOT N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND datoa(2) AND NOT datob(3) AND N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND NOT datoa(2) AND datob(3) AND N_PZ_48 AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(2) AND N_PZ_76 AND datob(3) AND N_PZ_48 AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(2) AND NOT N_PZ_76 AND datob(3) AND N_PZ_48 AND NOT C3/_n0009));
+</td></tr><tr><td>
+LDCP_resm6: LDCP port map (resm(6),resm_D(6),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resm_D(6) <= ((selecs(1) AND NOT selecs(0) AND NOT N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(2) AND datob(3) AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND NOT N_PZ_68 AND datoa(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_50 AND datob(3) AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (datob(0) AND selecs(1) AND NOT selecs(0) AND NOT N_PZ_90 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND N_PZ_50 AND N_PZ_51 AND datob(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datoa(2) AND N_PZ_76 AND N_PZ_48 AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_76 AND N_PZ_51 AND datob(3) AND N_PZ_48)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_50 AND N_PZ_51 AND NOT N_PZ_48 AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND NOT N_PZ_68 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_51 AND NOT datob(3) AND N_PZ_48 AND C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND datob(2) AND datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND datoa(2) AND datob(3) AND NOT C3/_n0009)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (selecs(1) AND NOT selecs(0) AND N_PZ_90 AND datoa(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_68 AND NOT N_PZ_51 AND datob(3) AND N_PZ_48 AND C3/_n0009));
+</td></tr><tr><td>
+LDCP_resm7: LDCP port map (resm(7),resm_D(7),NOT N_PZ_68,'0','0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resm_D(7) <= (datob(0) AND selecs(1) AND NOT selecs(2) AND NOT selecs(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(2) AND datob(1) AND datoa(1) AND datoa(2) AND datoa(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	datob(3) AND C3/_n0009);
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

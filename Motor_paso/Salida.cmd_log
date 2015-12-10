@@ -1,0 +1,5 @@
+xst -ise "C:/projectxilinx/motorpa/motorpa.ise" -intstyle ise -ifn Salida.xst -ofn Salida.syr
+ngdbuild -ise "C:/projectxilinx/motorpa/motorpa.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-ft256-4 "Salida.ngc" Salida.ngd
+map -ise "C:/projectxilinx/motorpa/motorpa.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o Salida_map.ncd Salida.ngd Salida.pcf
+par -ise "C:/projectxilinx/motorpa/motorpa.ise" -w -intstyle ise -ol std -t 1 Salida_map.ncd Salida.ncd Salida.pcf
+trce -ise "C:/projectxilinx/motorpa/motorpa.ise" -intstyle ise -e 3 -s 4 -xml Salida Salida.ncd -o Salida.twr Salida.pcf

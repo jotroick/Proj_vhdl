@@ -1,0 +1,3 @@
+MODULE leftsim
+SUBMODULE leftshifter
+INSTANCE UUT

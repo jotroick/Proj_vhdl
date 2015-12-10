@@ -1,0 +1,20 @@
+Release 8.1i ngdbuild I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p
+xa3s200-ftg256-4 leftshifter.ngc leftshifter.ngd 
+
+Reading NGO file 'D:/Documentos/XILINXPROYECTOS/aluparc/leftshifter.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 62608 kilobytes
+
+Writing NGD file "leftshifter.ngd" ...
+
+Writing NGDBUILD log file "leftshifter.bld"...

@@ -1,0 +1,1 @@
+xst -ise "C:/Users/Josafat/Desktop/Semaforo/Semaforo.ise" -intstyle ise -ifn luz.xst -ofn luz.syr

@@ -1,0 +1,8 @@
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn desplazamiento.xst -ofn desplazamiento.syr
+ngdbuild -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -dd _ngo -nt timestamp -i -p xa3s200-ftg256-4 desplazamiento.ngc desplazamiento.ngd
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o desplazamiento_map.ncd desplazamiento.ngd desplazamiento.pcf
+map -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -p xa3s200-ftg256-4 -cm area -pr b -k 4 -c 100 -o desplazamiento_map.ncd desplazamiento.ngd desplazamiento.pcf
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn desplazamiento.xst -ofn desplazamiento.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn desplazamiento.xst -ofn desplazamiento.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn desplazamiento.xst -ofn desplazamiento.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn desplazamiento.xst -ofn desplazamiento.syr

@@ -1,0 +1,2 @@
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn mux5.xst -ofn mux5.syr
+xst -ise "D:/Documentos/XILINXPROYECTOS/aluparc/aluparc" -intstyle ise -ifn mux5.xst -ofn mux5.syr

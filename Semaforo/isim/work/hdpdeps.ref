@@ -1,0 +1,45 @@
+V3 22
+FL C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd 2007/10/24.23:18:56 J.30
+EN work/luz 1193323088 FL C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd \
+      PB ieee/std_logic_1164 1164799246 PB ieee/std_logic_arith 1164799248 \
+      PB ieee/STD_LOGIC_UNSIGNED 1164799254
+AR work/luz/semaforo 1193323089 \
+      FL C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd EN work/luz 1193323088
+FL C:/Users/Josafat/Desktop/Semaforo/sem_sim.vhw 2007/10/24.23:23:02 J.30
+EN work/sem_sim 1193323090 FL C:/Users/Josafat/Desktop/Semaforo/sem_sim.vhw \
+      PB ieee/std_logic_1164 1164799246 PB ieee/std_logic_arith 1164799248 \
+      PB ieee/STD_LOGIC_UNSIGNED 1164799254 PB ieee/STD_LOGIC_TEXTIO 1164799256 \
+      PB std/textio 1164799233
+AR work/sem_sim/testbench_arch 1193323091 \
+      FL C:/Users/Josafat/Desktop/Semaforo/sem_sim.vhw EN work/sem_sim 1193323090 \
+      CP luz
+FL $XILINX/Semaforo/semaforo_sim.vhw 2007/10/24.20:58:11 J.30
+EN work/semaforo_sim 1193277496 FL $XILINX/Semaforo/semaforo_sim.vhw \
+      PB ieee/std_logic_1164 1164799246 PB ieee/std_logic_arith 1164799248 \
+      PB ieee/STD_LOGIC_UNSIGNED 1164799254 PB ieee/STD_LOGIC_TEXTIO 1164799256 \
+      PB std/textio 1164799233
+AR work/semaforo_sim/testbench_arch 1193277497 \
+      FL $XILINX/Semaforo/semaforo_sim.vhw EN work/semaforo_sim 1193277496 CP luz
+FL $XILINX/Semaforo/semaforo_vhdl.vhd 2007/10/24.23:18:55 J.30
+FL $XILINX/Semaforo/sem_1.vhw 2007/10/24.23:03:34 J.30
+EN work/sem_1 1193285022 FL $XILINX/Semaforo/sem_1.vhw PB ieee/std_logic_1164 1164799246 \
+      PB ieee/std_logic_arith 1164799248 PB ieee/STD_LOGIC_UNSIGNED 1164799254 \
+      PB ieee/STD_LOGIC_TEXTIO 1164799256 PB std/textio 1164799233
+AR work/sem_1/testbench_arch 1193285023 \
+      FL $XILINX/Semaforo/sem_1.vhw EN work/sem_1 1193285022 CP luz
+FL $XILINX/Semaforo/sem_2.vhw 2007/10/24.22:27:33 J.30
+EN work/sem_2 1193282864 FL $XILINX/Semaforo/sem_2.vhw PB ieee/std_logic_1164 1164799246 \
+      PB ieee/std_logic_arith 1164799248 PB ieee/STD_LOGIC_UNSIGNED 1164799254 \
+      PB ieee/STD_LOGIC_TEXTIO 1164799256 PB std/textio 1164799233
+AR work/sem_2/testbench_arch 1193282865 \
+      FL $XILINX/Semaforo/sem_2.vhw EN work/sem_2 1193282864 CP luz
+FL $XILINX/Semaforo/sem_sim.vhw 2007/10/24.23:23:00 J.30
+FL $XILINX/Semaforo/simulacion_semaforo.ant 2007/10/24.22:07:09 J.30
+FL $XILINX/Semaforo/simulacion_semaforo.vhw 2007/10/24.22:24:17 J.30
+EN work/simulacion_semaforo 1193282665 \
+      FL $XILINX/Semaforo/simulacion_semaforo.vhw PB ieee/std_logic_1164 1164799246 \
+      PB ieee/std_logic_arith 1164799248 PB ieee/STD_LOGIC_UNSIGNED 1164799254 \
+      PB ieee/STD_LOGIC_TEXTIO 1164799256 PB std/textio 1164799233
+AR work/simulacion_semaforo/testbench_arch 1193282666 \
+      FL $XILINX/Semaforo/simulacion_semaforo.vhw EN work/simulacion_semaforo 1193282665 \
+      CP luz

@@ -1,0 +1,79 @@
+V3 44
+FL D:/Documentos/XILINXPROYECTOS/aluparc/restador.vhd 2007/04/15.13:39:46 I.24
+EN work/restador 1176686633        FL D:/Documentos/XILINXPROYECTOS/aluparc/restador.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/restador/Behavioral 1176686634 FL D:/Documentos/XILINXPROYECTOS/aluparc/restador.vhd \
+      EN work/restador 1176686633 CP restin
+FL D:/Documentos/XILINXPROYECTOS/aluparc/fulladd.vhd 2007/04/15.13:37:53 I.24
+EN work/fulladd 1176686629         FL D:/Documentos/XILINXPROYECTOS/aluparc/fulladd.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/fulladd/Behavioral 1176686630 FL D:/Documentos/XILINXPROYECTOS/aluparc/fulladd.vhd \
+      EN work/fulladd 1176686629
+FL D:/Documentos/XILINXPROYECTOS/aluparc/fulladder.vhd 2007/04/15.16:12:23 I.24
+EN work/fulladder 1176686631       FL D:/Documentos/XILINXPROYECTOS/aluparc/fulladder.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/fulladder/behavior 1176686632 FL D:/Documentos/XILINXPROYECTOS/aluparc/fulladder.vhd \
+      EN work/fulladder 1176686631 CP fulladd
+FL D:/Documentos/XILINXPROYECTOS/aluparc/mux5.vhd 2007/04/15.16:02:49 I.24
+EN work/mux5 1176686641            FL D:/Documentos/XILINXPROYECTOS/aluparc/mux5.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/mux5/escoge 1176686642     FL D:/Documentos/XILINXPROYECTOS/aluparc/mux5.vhd \
+      EN work/mux5 1176686641
+FL "C:/Documents and Settings/Administrador/Mis documentos/Mis archivos recibidos/transmisoor/desplazamiento.vhd" 2007/04/15.20:08:03 I.24
+EN work/desplazamiento 1176685689 \
+      FL "C:/Documents and Settings/Administrador/Mis documentos/Mis archivos recibidos/transmisoor/desplazamiento.vhd" \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/desplazamiento/Behavioral 1176685690 \
+      FL "C:/Documents and Settings/Administrador/Mis documentos/Mis archivos recibidos/transmisoor/desplazamiento.vhd" \
+      EN work/desplazamiento 1176685689
+FL D:/Documentos/XILINXPROYECTOS/aluparc/shiftregister.vhd 2007/04/15.13:00:28 I.24
+EN work/shiftregister 1176660322   FL D:/Documentos/XILINXPROYECTOS/aluparc/shiftregister.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/shiftregister/desplaza 1176660323 \
+      FL D:/Documentos/XILINXPROYECTOS/aluparc/shiftregister.vhd \
+      EN work/shiftregister 1176660322
+FL D:/Documentos/XILINXPROYECTOS/aluparc/demux.vhd 2007/04/14.23:59:12 I.24
+EN work/demux 1176660314           FL D:/Documentos/XILINXPROYECTOS/aluparc/demux.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/demux/Behavioral 1176660315 FL D:/Documentos/XILINXPROYECTOS/aluparc/demux.vhd \
+      EN work/demux 1176660314
+FL D:/Documentos/XILINXPROYECTOS/aluparc/rightshifter.vhd 2007/04/15.20:19:29 I.24
+EN work/rightshifter 1176686639    FL D:/Documentos/XILINXPROYECTOS/aluparc/rightshifter.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/rightshifter/despright 1176686640 \
+      FL D:/Documentos/XILINXPROYECTOS/aluparc/rightshifter.vhd \
+      EN work/rightshifter 1176686639
+FL D:/Documentos/XILINXPROYECTOS/aluparc/restin.vhd 2007/04/15.00:04:19 I.24
+EN work/restin 1176686627          FL D:/Documentos/XILINXPROYECTOS/aluparc/restin.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/restin/Behavioral 1176686628 FL D:/Documentos/XILINXPROYECTOS/aluparc/restin.vhd \
+      EN work/restin 1176686627
+FL D:/Documentos/XILINXPROYECTOS/aluparc/alu.vhd 2007/04/15.20:20:41 I.24
+EN work/ALU 1176686845             FL D:/Documentos/XILINXPROYECTOS/aluparc/alu.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/ALU/Behavioral 1176686846  FL D:/Documentos/XILINXPROYECTOS/aluparc/alu.vhd \
+      EN work/ALU 1176686845 CP fulladder  CP restador       CP multicom \
+      CP leftshifter    CP rightshifter   CP mux5
+FL D:/Documentos/XILINXPROYECTOS/aluparc/leftshifter.vhd 2007/04/15.20:19:29 I.24
+EN work/leftshifter 1176686637     FL D:/Documentos/XILINXPROYECTOS/aluparc/leftshifter.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/leftshifter/despleft 1176686638 \
+      FL D:/Documentos/XILINXPROYECTOS/aluparc/leftshifter.vhd \
+      EN work/leftshifter 1176686637
+FL D:/Documentos/XILINXPROYECTOS/aluparc/multicom.vhd 2007/04/15.14:08:34 I.24
+EN work/multicom 1176686635        FL D:/Documentos/XILINXPROYECTOS/aluparc/multicom.vhd \
+      PB ieee/std_logic_1164 1131108373 PB ieee/std_logic_arith 1131108375 \
+      PB ieee/STD_LOGIC_UNSIGNED 1131108379
+AR work/multicom/combmult 1176686636 FL D:/Documentos/XILINXPROYECTOS/aluparc/multicom.vhd \
+      EN work/multicom 1176686635

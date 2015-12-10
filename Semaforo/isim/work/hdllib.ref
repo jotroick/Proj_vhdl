@@ -1,0 +1,12 @@
+AR sem_sim testbench_arch C:/Users/Josafat/Desktop/Semaforo/sem_sim.vhw sub00/vhpl11 1193323091
+AR simulacion_semaforo testbench_arch C:/Xilinx91i/Semaforo/simulacion_semaforo.vhw sub00/vhpl05 1193282666
+EN sem_sim NULL C:/Users/Josafat/Desktop/Semaforo/sem_sim.vhw sub00/vhpl10 1193323090
+AR luz semaforo C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd sub00/vhpl01 1193323089
+AR sem_1 testbench_arch C:/Xilinx91i/Semaforo/sem_1.vhw sub00/vhpl09 1193285023
+EN semaforo_sim NULL C:/Xilinx91i/Semaforo/semaforo_sim.vhw sub00/vhpl02 1193277496
+EN simulacion_semaforo NULL C:/Xilinx91i/Semaforo/simulacion_semaforo.vhw sub00/vhpl04 1193282665
+EN luz NULL C:/Users/Josafat/Desktop/Semaforo/semaforo_vhdl.vhd sub00/vhpl00 1193323088
+EN sem_1 NULL C:/Xilinx91i/Semaforo/sem_1.vhw sub00/vhpl08 1193285022
+EN sem_2 NULL C:/Xilinx91i/Semaforo/sem_2.vhw sub00/vhpl06 1193282864
+AR semaforo_sim testbench_arch C:/Xilinx91i/Semaforo/semaforo_sim.vhw sub00/vhpl03 1193277497
+AR sem_2 testbench_arch C:/Xilinx91i/Semaforo/sem_2.vhw sub00/vhpl07 1193282865

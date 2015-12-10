@@ -1,0 +1,3 @@
+MODULE rshifsim
+SUBMODULE rightshifter
+INSTANCE UUT

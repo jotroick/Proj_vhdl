@@ -1,0 +1,32 @@
+Release 9.2i - xst J.36
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.18 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/crono/rtl is now defined in a different file.  It was defined in "C:/projectxilinx/cronome/crono.vhd", and is now defined in "C:/projectxilinx/cronome/cgh.vhd".
+WARNING:HDLParsers:3607 - Unit work/crono is now defined in a different file.  It was defined in "C:/projectxilinx/cronome/cgh.vhd", and is now defined in "C:/projectxilinx/cronome/crono.vhd".
+WARNING:HDLParsers:3607 - Unit work/crono/rtl is now defined in a different file.  It was defined in "C:/projectxilinx/cronome/cgh.vhd", and is now defined in "C:/projectxilinx/cronome/crono.vhd".
+Compiling vhdl file "C:/projectxilinx/cronome/cgh.vhd" in Library work.
+Architecture rtl of Entity crono is up to date.
+Compiling vhdl file "C:/projectxilinx/cronome/crono.vhd" in Library work.
+ERROR:HDLParsers:163 - "C:/projectxilinx/cronome/crono.vhd" Line 87. Unexpected symbol read: á.
+ERROR:HDLParsers:3312 - "C:/projectxilinx/cronome/crono.vhd" Line 87. Undefined symbol 'P'.
+ERROR:HDLParsers:1209 - "C:/projectxilinx/cronome/crono.vhd" Line 87. P: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "C:/projectxilinx/cronome/crono.vhd" Line 87. parse error, unexpected IDENTIFIER, expecting OPENPAR or TICK or LSQBRACK
+ERROR:HDLParsers:3312 - "C:/projectxilinx/cronome/crono.vhd" Line 142. Undefined symbol 'ponen'.
+ERROR:HDLParsers:1209 - "C:/projectxilinx/cronome/crono.vhd" Line 142. ponen: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "C:/projectxilinx/cronome/crono.vhd" Line 142. parse error, unexpected IDENTIFIER, expecting OPENPAR or TICK or LSQBRACK
+CPU : 0.24 / 0.43 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+
+Total memory usage is 131508 kilobytes
+
+Number of errors   :    7 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

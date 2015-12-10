@@ -1,0 +1,48 @@
+Pin Freeze File:  version I.24
+
+A2C64A44VQ XA2C64A-7-VQ44
+CLK S:PIN43
+datoa<0> S:PIN37
+datoa<1> S:PIN36
+datoa<2> S:PIN34
+datoa<3> S:PIN38
+datob<0> S:PIN2
+datob<1> S:PIN3
+datob<2> S:PIN31
+datob<3> S:PIN30
+selecs<0> S:PIN22
+selecs<1> S:PIN21
+selecs<2> S:PIN20
+res<0> S:PIN27
+res<1> S:PIN23
+res<2> S:PIN28
+res<3> S:PIN29
+resm<0> S:PIN1
+resm<1> S:PIN44
+resm<2> S:PIN42
+resm<3> S:PIN41
+resm<4> S:PIN33
+resm<5> S:PIN39
+resm<6> S:PIN32
+resm<7> S:PIN40
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 cableshif<0> cableshif<1> cableshif<2>
+PARTITION FB1_8 N_PZ_134 cableshif<3> resm<4> resm<6>
+		
+PARTITION FB1_14 N_PZ_161 C6/Mmux__n0009_I1_Result2 C3/_n0009
+PARTITION FB2_1 resm<5> resm<7>
+PARTITION FB2_5 resm<3> resm<2>
+PARTITION FB2_8 resm<1>
+PARTITION FB2_10 resm<0> N_PZ_68
+PARTITION FB2_14 N_PZ_78 C3/Mxor_p<3>__n0001 C1/cable<2>
+PARTITION FB3_1 res<3> res<2> res<0> N_PZ_51
+		 N_PZ_50 res<1> cableshifr<1> cableshifr<0>
+		 cableshifr<3>
+PARTITION FB3_12 N_PZ_109 cableshifr<2> N_PZ_90 N_PZ_76
+		 N_PZ_48
+
+

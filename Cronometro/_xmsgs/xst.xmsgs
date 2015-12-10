@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="unknown" >Unit <arg fmt="%s" index="1">work/crono/rtl</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/projectxilinx/cronome/crono.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/projectxilinx/cronome/cgh.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="unknown" >Unit <arg fmt="%s" index="1">work/crono</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/projectxilinx/cronome/cgh.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/projectxilinx/cronome/crono.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="unknown" >Unit <arg fmt="%s" index="1">work/crono/rtl</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">C:/projectxilinx/cronome/cgh.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">C:/projectxilinx/cronome/crono.vhd</arg>&quot;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="163" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/projectxilinx/cronome/crono.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. Unexpected symbol read: <arg fmt="%s" index="3">￡</arg>.
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/projectxilinx/cronome/crono.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">P</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/projectxilinx/cronome/crono.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. <arg fmt="%s" index="3">P</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="164" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/projectxilinx/cronome/crono.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. <arg fmt="%s" index="3">parse error, unexpected IDENTIFIER, expecting OPENPAR or TICK or LSQBRACK</arg>
+</msg>
+
+<msg type="error" file="HDLParsers" num="3312" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/projectxilinx/cronome/crono.vhd</arg>&quot; Line <arg fmt="%d" index="2">142</arg>. Undefined symbol &apos;<arg fmt="%s" index="3">ponen</arg>&apos;.
+</msg>
+
+<msg type="error" file="HDLParsers" num="1209" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/projectxilinx/cronome/crono.vhd</arg>&quot; Line <arg fmt="%d" index="2">142</arg>. <arg fmt="%s" index="3">ponen</arg>: Undefined symbol (last report in this block)
+</msg>
+
+<msg type="error" file="HDLParsers" num="164" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/projectxilinx/cronome/crono.vhd</arg>&quot; Line <arg fmt="%d" index="2">142</arg>. <arg fmt="%s" index="3">parse error, unexpected IDENTIFIER, expecting OPENPAR or TICK or LSQBRACK</arg>
+</msg>
+
+</messages>
+

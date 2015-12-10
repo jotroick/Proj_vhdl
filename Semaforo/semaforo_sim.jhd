@@ -1,0 +1,3 @@
+MODULE semaforo_sim
+SUBMODULE luz
+INSTANCE UUT

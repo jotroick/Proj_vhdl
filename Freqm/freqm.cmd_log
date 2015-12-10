@@ -1,0 +1,1 @@
+sch2vhdl -intstyle ise -family spartan3e -flat -suppress -w "C:/Xilinx91i/ISEexamples/freqm/freqm.sch" freqm.vhf

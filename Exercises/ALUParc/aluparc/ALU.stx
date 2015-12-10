@@ -1,0 +1,39 @@
+Release 8.1i - xst I.24
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.63 s | Elapsed : 0.00 / 1.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/restin.vhd" in Library work.
+Architecture behavioral of Entity restin is up to date.
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/fulladd.vhd" in Library work.
+Architecture behavioral of Entity fulladd is up to date.
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/fulladder.vhd" in Library work.
+Architecture behavior of Entity fulladder is up to date.
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/restador.vhd" in Library work.
+Architecture behavioral of Entity restador is up to date.
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/multicom.vhd" in Library work.
+Architecture combmult of Entity multicom is up to date.
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/leftshifter.vhd" in Library work.
+Architecture despleft of Entity leftshifter is up to date.
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/rightshifter.vhd" in Library work.
+Architecture despright of Entity rightshifter is up to date.
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/mux5.vhd" in Library work.
+WARNING:HDLParsers:1406 - "D:/Documentos/XILINXPROYECTOS/aluparc/mux5.vhd" Line 48. No sensitivity list and no wait in the process
+Architecture escoge of Entity mux5 is up to date.
+Compiling vhdl file "D:/Documentos/XILINXPROYECTOS/aluparc/alu.vhd" in Library work.
+Entity <alu> compiled.
+Entity <alu> (Architecture <behavioral>) compiled.
+CPU : 1.55 / 2.17 s | Elapsed : 1.00 / 2.00 s
+ 
+--> 
+
+Total memory usage is 88136 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

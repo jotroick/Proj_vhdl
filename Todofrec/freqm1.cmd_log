@@ -1,0 +1,15 @@
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "C:/projectxilinx/Todofrec/freqm1.sch" freqm1.vhf
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/Todofrec/freqm1.sch" freqm1.vhf
+xst -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -ifn freqm1.xst -ofn freqm1.syr
+ngdbuild -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "freqm1.ucf" -p xc3s200-ft256-4 "freqm1.ngc" freqm1.ngd
+map -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o freqm1_map.ncd freqm1.ngd freqm1.pcf
+par -ise "D:/Todofrec/Todofrec.ise" -w -intstyle ise -ol std -t 1 freqm1_map.ncd freqm1.ncd freqm1.pcf
+trce -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -e 3 -s 4 -xml freqm1 freqm1.ncd -o freqm1.twr freqm1.pcf -ucf freqm1.ucf
+bitgen -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -f freqm1.ut freqm1.ncd
+sch2vhdl -intstyle ise -family spartan3 -flat -suppress -w "D:/Todofrec/freqm1.sch" freqm1.vhf
+xst -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -ifn freqm1.xst -ofn freqm1.syr
+ngdbuild -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -dd _ngo -nt timestamp -uc "freqm1.ucf" -p xc3s200-ft256-4 "freqm1.ngc" freqm1.ngd
+map -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o freqm1_map.ncd freqm1.ngd freqm1.pcf
+par -ise "D:/Todofrec/Todofrec.ise" -w -intstyle ise -ol std -t 1 freqm1_map.ncd freqm1.ncd freqm1.pcf
+trce -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -e 3 -s 4 -xml freqm1 freqm1.ncd -o freqm1.twr freqm1.pcf -ucf freqm1.ucf
+bitgen -ise "D:/Todofrec/Todofrec.ise" -intstyle ise -f freqm1.ut freqm1.ncd
